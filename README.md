@@ -18,6 +18,22 @@ Thanks for helping us make HerzogCAB better!
 
 # Changelog / Release Notes
 
+### HerzogCAB 1.1.2 — 2025-11-27
+**New**
+- Added a legacy HerzogCAB Design import so existing designs from the old application can be brought into version 1.1.2.
+- Brought legacy change-gear values, GFL import, and old gapping import options into the history and Settings UI.
+- Introduced collapse labels and popups for the history sidebar to keep oversized imports manageable.
+
+**Improvements**
+- Localized navigation titles, history labels, and import strings across the app and updated translation samples in the README.
+- Refined navigation labels for design types, JSON entries, and legacy selections while keeping node widths consistent in the UI.
+- Updated the README navigation-tree example by adding change-gear and settings nodes, removing obsolete entries, and refreshing tooltips.
+
+**Bugfixes**
+- Fixed history rendering for large entries, legacy calculations, and change-gear associations so results show correctly with units.
+- Corrected swapped legacy imports, collapsed-history states, and main window mappings for navigation labels.
+- Resolved product-table coloring in the model and aligned custom swatch widths with the narrowed navigation layout.
+
 ### HerzogCAB 1.1.1 — 2025-11-21
 **New**
 - Added right-click editing for custom color swatches so designers can open the color dialog directly from the palette.
