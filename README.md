@@ -21,8 +21,7 @@ Thanks for helping us make HerzogCAB better!
 ### HerzogCAB 1.1.2 — 2025-11-27
 **New**
 - Added a legacy HerzogCAB Design import so existing designs from the old application can be brought into version 1.1.2.
-- Brought legacy change-gear values, GFL import, and old gapping import options into the history and Settings UI.
-- Introduced collapse labels and popups for the history sidebar to keep oversized imports manageable.
+- Introduced collapse labels and popups for the history sidebar and the new navigationbar.
 
 **Improvements**
 - Localized navigation titles, history labels, and import strings across the app and updated translation samples in the README.
