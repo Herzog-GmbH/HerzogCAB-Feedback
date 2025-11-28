@@ -19,12 +19,10 @@ Thanks for helping us make HerzogCAB better!
 # Changelog / Release Notes
 
 ## HerzogCAB 1.1.2 — 2025-11-27
-
-### Highlights
+**New**
 
 - **Import legacy HerzogCAB Design projects**
   - You can now import designs created with the old HerzogCAB Design into the new application.
-  - Legacy options such as change-gear values amd and gapping settings are converted to the new format and recorded in the history with correct units.
   - This lets you continue working with existing customer projects instead of recreating them from scratch.
 
 - **New collapsible navigation sidebar with updated icons**
@@ -45,8 +43,6 @@ Thanks for helping us make HerzogCAB better!
 
 ### Bugfixes
 
-- Fixed history rendering for large entries, legacy calculations, and change-gear associations so all values including units are displayed correctly.
-- Corrected mapping of legacy carrier schemas, colors, bindings, and gapping data during import.
 - Fixed various issues with the collapsed navigation bar and its popups (headers, alignment of icons and footer, highlight states).
 - Resolved product-table coloring issues and aligned custom swatch widths with the narrowed navigation layout.
 
