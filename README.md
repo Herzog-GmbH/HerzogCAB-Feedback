@@ -18,20 +18,37 @@ Thanks for helping us make HerzogCAB better!
 
 # Changelog / Release Notes
 
-### HerzogCAB 1.1.2 — 2025-11-27
-**New**
-- Added a legacy HerzogCAB Design import so existing designs from the old application can be brought into version 1.1.2.
-- Introduced collapse labels and popups for the history sidebar and the new navigationbar.
+## HerzogCAB 1.1.2 — 2025-11-27
 
-**Improvements**
-- Localized navigation titles, history labels, and import strings across the app and updated translation samples in the README.
-- Refined navigation labels for design types, JSON entries, and legacy selections while keeping node widths consistent in the UI.
-- Updated the README navigation-tree example by adding change-gear and settings nodes, removing obsolete entries, and refreshing tooltips.
+### Highlights
 
-**Bugfixes**
-- Fixed history rendering for large entries, legacy calculations, and change-gear associations so results show correctly with units.
-- Corrected swapped legacy imports, collapsed-history states, and main window mappings for navigation labels.
-- Resolved product-table coloring in the model and aligned custom swatch widths with the narrowed navigation layout.
+- **Import legacy HerzogCAB Design projects**
+  - You can now import designs created with the old HerzogCAB Design into the new application.
+  - Legacy options such as change-gear values amd and gapping settings are converted to the new format and recorded in the history with correct units.
+  - This lets you continue working with existing customer projects instead of recreating them from scratch.
+
+- **New collapsible navigation sidebar with updated icons**
+  - The navigation sidebar can now be collapsed to a slim icon bar and expanded again when you need the full tree.
+  - Hovering or clicking on an icon in the collapsed bar opens a popup with the entries of that category (e.g. round braid, flat braid, settings).
+  - Icons and spacing have been refreshed to make sections easier to recognize and to free up more space for the design view.
+
+- **Reworked history sidebar**
+  - History entries now use clearer titles and consistent units for braid angles, speeds, and change-gear values.
+  - Large histories can be collapsed, so long imports and calculations stay readable.
+  - New toggle icons make it easier to show or hide the history sidebar when you need more space.
+
+### Improvements
+
+- Updated translations for navigation, history, and import dialogs and refreshed the examples in the README.
+- Refined navigation labels for design types, JSON entries, change-gear settings, and legacy selections while keeping node widths consistent.
+- Polished the layout of the navigation and history sidebars (button sizes, spacing, borders, and highlights) for a more consistent look.
+
+### Bugfixes
+
+- Fixed history rendering for large entries, legacy calculations, and change-gear associations so all values including units are displayed correctly.
+- Corrected mapping of legacy carrier schemas, colors, bindings, and gapping data during import.
+- Fixed various issues with the collapsed navigation bar and its popups (headers, alignment of icons and footer, highlight states).
+- Resolved product-table coloring issues and aligned custom swatch widths with the narrowed navigation layout.
 
 ### HerzogCAB 1.1.1 — 2025-11-21
 **New**
