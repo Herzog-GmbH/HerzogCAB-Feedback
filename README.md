@@ -26,12 +26,10 @@ Thanks for helping us make HerzogCAB better!
   - This lets you continue working with existing customer projects instead of recreating them from scratch.
 
 - **New collapsible navigation sidebar with updated icons**
-
-  | | |
-  | --- | --- |
-  | <img src="docs/navigation-sidebar.gif" alt="Navigation sidebar demo" width="50%"> | The navigation sidebar can now be collapsed to a slim icon bar and expanded again when you need the full tree.  
-  Hovering or clicking on an icon in the collapsed bar opens a popup with the entries of that category (e.g. round braid, flat braid, settings).  
-  Icons and spacing have been refreshed to make sections easier to recognize and to free up more space for the design view. |
+  - The navigation sidebar can now be collapsed to a slim icon bar and expanded again when you need the full tree.
+  - Hovering or clicking on an icon in the collapsed bar opens a popup with the entries of that category (e.g. round braid, flat braid, settings)
+  - Icons and spacing have been refreshed to make sections easier to recognize and to free up more space for the design view.
+ <p align="center"> <img src="docs/navigation-sidebar.gif" alt="Navigation sidebar demo" width="15%"> </p>
 
 - **Reworked history sidebar**
   - History entries now use clearer titles and consistent units for braid angles, speeds, and change-gear values.
