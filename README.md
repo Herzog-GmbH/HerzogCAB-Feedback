@@ -29,7 +29,7 @@ Thanks for helping us make HerzogCAB better!
 
   | | |
   | --- | --- |
-  | ![Navigation sidebar demo](docs/navigation-sidebar.gif) | The navigation sidebar can now be collapsed to a slim icon bar and expanded again when you need the full tree.  
+  | <img src="docs/navigation-sidebar.gif" alt="Navigation sidebar demo" width="50%"> | The navigation sidebar can now be collapsed to a slim icon bar and expanded again when you need the full tree.  
   Hovering or clicking on an icon in the collapsed bar opens a popup with the entries of that category (e.g. round braid, flat braid, settings).  
   Icons and spacing have been refreshed to make sections easier to recognize and to free up more space for the design view. |
 
