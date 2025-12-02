@@ -1,8 +1,8 @@
-# HerzogCAB Feedback & Issues
+# Herzog CAB Feedback & Issues
 
-Welcome to the official HerzogCAB feedback repository!
+Welcome to the official Herzog CAB feedback repository!
 
-Here’s where you can help us improve HerzogCAB by sharing your ideas and reporting any issues.
+Here’s where you can help us improve Herzog CAB by sharing your ideas and reporting any issues.
 
 🚀 How to Contribute
 
@@ -13,14 +13,14 @@ Submit an Issue: Just head over to the Issues tab
 
 🐞 Bug Reports: Noticing something off? Let us know so we can fix it quickly.
 
-Thanks for helping us make HerzogCAB better!
+Thanks for helping us make Herzog CAB better!
 
 Latest Version: 1.1.2
 
 
 # Changelog / Release Notes
 
-## HerzogCAB 1.1.2 — 2025-11-27
+## Herzog CAB 1.1.2 — 2025-11-27
 **New**
 
 - **Import legacy HerzogCAB Design projects**
@@ -49,7 +49,7 @@ Latest Version: 1.1.2
 - Fixed various issues with the collapsed navigation bar and its popups (headers, alignment of icons and footer, highlight states).
 - Resolved product-table coloring issues and aligned custom swatch widths with the narrowed navigation layout.
 
-### HerzogCAB 1.1.1 — 2025-11-21
+### Herzog CAB 1.1.1 — 2025-11-21
 **New**
 - Added right-click editing for custom color swatches so designers can open the color dialog directly from the palette.
 - Added a file-system view in the product UI to organize saved designs alongside the feedback workflow.
@@ -64,7 +64,7 @@ Latest Version: 1.1.2
 - Corrected an XML entity in the main window stylesheet to display assets reliably.
 - Resolved navigation tree show/hide issues and gear-slot corrections for half-populated layouts.
 
-### HerzogCAB 1.1.0 — 2025-11-10
+### Herzog CAB 1.1.0 — 2025-11-10
 **New**
 - Introduced multi-language support and updated preview imagery for the product UI and production sheet.
 - Implemented initial design saving plus texture coloring, including bobbin numbering in braid previews.
@@ -77,7 +77,7 @@ Latest Version: 1.1.2
 **Bugfixes**
 - Made black textures visible in previews.
 
-### HerzogCAB 1.0.0 — 2025-10-28
+### Herzog CAB 1.0.0 — 2025-10-28
 **New**
 - Added a bobbin table and refactored bobbin mapping into dedicated classes for clarity.
 - Brought bobbin visuals into the overview, including coloring horn gears and handing textures to the view.
