@@ -15,6 +15,8 @@ Submit an Issue: Just head over to the Issues tab
 
 Thanks for helping us make HerzogCAB better!
 
+Latest Version: 1.1.2
+
 
 # Changelog / Release Notes
 
