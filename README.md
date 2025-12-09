@@ -15,10 +15,61 @@ Submit an Issue: Just head over to the Issues tab
 
 Thanks for helping us make Herzog CAB better!
 
-Latest Version: 1.1.2
+Latest Version: 1.1.3
 
 
 # Changelog / Release Notes
+
+
+## Herzog CAB 1.1.3 — 2025-12-10
+### **New**
+
+- **New designer home screen**
+  - The designer now has its own dedicated home screen.
+  - On the left, users find a short description explaining how to load braids or create new designs.
+  - On the right, all recently edited designs are listed and can be opened directly from this view.
+
+- **New “Load design” button in the designer**
+  - The designer now provides a dedicated **“Load design”** button.
+  - Clicking it opens the file dialog where you can select and load an existing design.
+
+- **Integrated feedback and update options**
+  - New buttons link directly from the application to the Herzog CAB GitHub page, where users can submit feedback, create issues or download the latest version.
+  - On startup, Herzog CAB now checks whether the installed version is outdated and whether a newer release is available on GitHub.
+  - A new startup message points to the feedback page and thanks users for helping to improve Herzog CAB.
+
+### **Improvements**
+
+- **Clearer designer structure with default design and “Add View”**
+  - A default design is now created automatically when the designer starts, so users no longer have to create a first design manually.
+  - With the new **“Add View”** button, additional design views can be added and adjusted dynamically.
+  - This makes working with multiple designs much more structured, readable and user-friendly.
+
+- **Printing for all open designs**
+  - It is now possible to print any of the open designs, not only the very first one.
+  - By switching between views, users can explicitly choose which of the open designs should be printed.
+
+- **Extended braid binding labels**
+  - Braid bindings now include the numeric notation, for example:
+    - Normal **1-1**
+    - Tandem **2-2**
+    - Half-populated **1-3**
+  - This makes it easier to understand the binding type and bobbin distribution at a glance.
+
+- **Adjust braid angle in the designer without losing the design**
+  - The braid angle can now be changed directly in the designer without forcing a full redraw that would discard the current design.
+  - Pitch and braid angle are automatically updated in the active design.
+
+### **Bugfixes**
+
+- Fixed an issue where the working directory could point to a non-existing folder. The path is now set correctly and the required directory is created reliably.
+- Fixed an issue where the braid parameter table in the printout could be empty when printing directly from the application. The table is now properly populated with all parameters.
+
+
+
+
+
+
 
 ## Herzog CAB 1.1.2 — 2025-11-27
 **New**
