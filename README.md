@@ -67,10 +67,6 @@ Latest Version: 1.1.3
 
 
 
-
-
-
-
 ## Herzog CAB 1.1.2 — 2025-11-27
 **New**
 
