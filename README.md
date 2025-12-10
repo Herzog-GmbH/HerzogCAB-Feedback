@@ -53,7 +53,7 @@ Latest Version: 1.1.3
   - Braid bindings now include the numeric notation, for example:
     - Normal **1-1**
     - Tandem **2-2**
-    - Half-populated **1-3**
+    - Half **1-3**
   - This makes it easier to understand the binding type and bobbin distribution at a glance.
 
 - **Adjust braid angle in the designer without losing the design**
