@@ -15,11 +15,67 @@ Submit an Issue: Just head over to the Issues tab
 
 Thanks for helping us make Herzog CAB better!
 
-Latest Version: 1.1.3
+Latest Version: 1.1.4
 
 
 # Changelog / Release Notes
 
+## Herzog CAB 1.1.4 — 2025-12-16
+
+### **New**
+
+- **Additional cylindrical / 3D view for round braids**
+  - A new cylindrical 3D-style view has been added to improve spatial understanding of round braids.
+  - This view makes braid structures and color progressions easier to analyze.
+
+- **Interactive braid rotation**
+  - Braids can now be rotated directly in the view.
+  - This allows inspection of the pattern from all sides and improves visual verification of crossings and color shifts.
+  - Rotation is controlled via dedicated UI controls without altering braid dimensions.
+
+- **Stepwise color rotation for carriers**
+  - New controls allow stepwise rotation of carrier colors.
+  - This makes it easy to test alternative color layouts and evaluate visual variants quickly.
+
+- **Keyboard shortcuts in the design browser**
+  - Common design browser actions are now accessible via keyboard shortcuts.
+  - Navigation and daily workflows are significantly faster.
+
+- **Extended multi-selection support**
+  - Multiple designs or folders can now be selected at once.
+  - Selected items can be deleted, copied, or moved in a single operation.
+
+
+### **Improvements**
+
+- **Improved printing pipeline**
+  - Printing now uses an offscreen buffer for table rendering.
+  - DPI handling has been stabilized and unified for consistent results across printers.
+  - Improves reliability of printed parameter tables.
+
+- **Improved color rotation UI**
+  - Color rotation controls have been reorganized and clearly labeled.
+  - Tooltips and toolbar buttons were added or refined for better usability.
+
+- **Refined cylindrical rendering**
+  - Improved sampling and clipping logic for cylindrical braid tiles.
+  - Reduced visual artifacts when rotating the braid.
+  - Improved handling of partially visible and backside geometry.
+
+
+### **Bugfixes**
+
+- **Fixed critical printout issue for single-page designs**
+  - Fixed a bug where the parameter table could be empty when printing single-page designs directly to a printer.
+  - All parameters are now reliably rendered and printed, matching the PDF export behavior.
+
+- **Fixed missing designs in root folder**
+  - Designs located in the root directory of the design browser were not displayed correctly.
+  - Root-level designs are now shown as expected.
+
+- **Fixed object connection and UI update issues**
+  - Resolved unique-connection errors in the designer.
+  - Improved stability of carrier table handlers and related UI updates.
 
 ## Herzog CAB 1.1.3 — 2025-12-10
 ### **New**
