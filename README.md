@@ -20,7 +20,7 @@ Latest Version: 1.1.4
 
 # Changelog / Release Notes
 
-## Herzog CAB 1.1.4 — 2025-12-16
+## Herzog CAB 1.1.4 — 2025-12-17
 
 ### **New**
 
