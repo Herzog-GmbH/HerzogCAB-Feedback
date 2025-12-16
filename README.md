@@ -27,19 +27,22 @@ Latest Version: 1.1.4
 - **Additional cylindrical / 3D view for round braids**
   - A new cylindrical 3D-style view has been added to improve spatial understanding of round braids.
   - This view makes braid structures and color progressions easier to analyze.
+   <img width="833" height="662" alt="image" src="https://github.com/user-attachments/assets/2fd85d23-219e-422d-ba44-a81905996736" /> 
+
 
 - **Interactive braid rotation**
   - Braids can now be rotated directly in the view.
   - This allows inspection of the pattern from all sides and improves visual verification of crossings and color shifts.
   - Rotation is controlled via dedicated UI controls without altering braid dimensions.
 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/65ae26d8-c354-43ab-9d00-b38a78f1b079" alt="1216">
+</p>
+
 - **Stepwise color rotation for carriers**
   - New controls allow stepwise rotation of carrier colors.
   - This makes it easy to test alternative color layouts and evaluate visual variants quickly.
-
-- **Keyboard shortcuts in the design browser**
-  - Common design browser actions are now accessible via keyboard shortcuts.
-  - Navigation and daily workflows are significantly faster.
 
 - **Extended multi-selection support**
   - Multiple designs or folders can now be selected at once.
@@ -48,19 +51,14 @@ Latest Version: 1.1.4
 
 ### **Improvements**
 
-- **Improved printing pipeline**
-  - Printing now uses an offscreen buffer for table rendering.
-  - DPI handling has been stabilized and unified for consistent results across printers.
-  - Improves reliability of printed parameter tables.
+- **Keyboard shortcuts in the design browser**
+  - Common design browser actions are now accessible via keyboard shortcuts.
+  - Navigation and daily workflows are significantly faster.
+ 
+- **Extended multi-selection support**
+  - Multiple designs or folders can now be selected at once.
+  - Selected items can be deleted, copied, or moved in a single operation.
 
-- **Improved color rotation UI**
-  - Color rotation controls have been reorganized and clearly labeled.
-  - Tooltips and toolbar buttons were added or refined for better usability.
-
-- **Refined cylindrical rendering**
-  - Improved sampling and clipping logic for cylindrical braid tiles.
-  - Reduced visual artifacts when rotating the braid.
-  - Improved handling of partially visible and backside geometry.
 
 
 ### **Bugfixes**
