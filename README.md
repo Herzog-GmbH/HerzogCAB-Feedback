@@ -27,7 +27,10 @@ Latest Version: 1.1.4
 - **Additional cylindrical / 3D view for round braids**
   - A new cylindrical 3D-style view has been added to improve spatial understanding of round braids.
   - This view makes braid structures and color progressions easier to analyze.
-   <img width="833" height="662" alt="image" src="https://github.com/user-attachments/assets/2fd85d23-219e-422d-ba44-a81905996736" /> 
+
+<p align="center">
+<img width="60%" alt="image" src="https://github.com/user-attachments/assets/2fd85d23-219e-422d-ba44-a81905996736" /> 
+</p>
 
 
 - **Interactive braid rotation**
