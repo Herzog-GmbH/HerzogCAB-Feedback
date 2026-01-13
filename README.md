@@ -15,6 +15,14 @@ Submit an Issue: Just head over to the Issues tab
 
 Thanks for helping us make Herzog CAB better!
 
+
+## The following roadmap outlines the upcoming development focus for Herzog CAB in early 2026.
+
+<img width="1368" height="904" alt="image" src="https://github.com/user-attachments/assets/2feae4c9-db3b-45b7-9005-f5cfb9bb6ad1" />
+
+
+
+
 Latest Version: 1.1.4
 
 
