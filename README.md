@@ -1,110 +1,108 @@
-# Herzog CAB Feedback & Issues
+# Herzog CAB
 
-Welcome to the official **Herzog CAB feedback repository**!
+Braiding design and calculation software for Herzog braiding machines.
 
-Here’s where you can help us improve Herzog CAB by sharing your ideas and reporting any issues.
+![Version](https://img.shields.io/badge/version-1.1.4-blue)
+![Status](https://img.shields.io/badge/status-active-green)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
 ---
 
-# 🚀 How to Contribute
+## About
+
+Herzog CAB is a software tool for designing and calculating braids used on Herzog braiding machines.
+
+It allows users to:
+
+- design round and flat braids
+- perform braid calculations
+- manage machines and production data
+- generate production documentation
+
+The project is actively developed and continuously improved.
+
+---
+
+# How to Contribute
+
+Your feedback helps improve Herzog CAB.
 
 ### 🐞 Bug Reports
-Noticing something off?  
-Let us know so we can fix it quickly.
 
-Go to the **Issues** tab and create a **Bug Report** with a detailed description.
+If you encounter a problem:
 
-Helpful information:
+1. Go to **Issues**
+2. Click **New Issue**
+3. Select **Bug Report**
 
-- steps to reproduce
+Include:
+
+- software version
 - screenshots
-- Herzog CAB version
+- steps to reproduce
 
 ---
 
 ### 💡 Feature Requests
-Have an idea that could improve Herzog CAB?
+
+Have an idea for improving Herzog CAB?
 
 Create a **Feature Request** issue and describe the use case.
 
 ---
 
-Thanks for helping us make **Herzog CAB better!**
+# Development Roadmap
 
----
+The following roadmap outlines the upcoming development focus for Herzog CAB.
 
-# 🗺️ Roadmap (Early 2026)
-
-The following roadmap outlines the upcoming development focus for **Herzog CAB**.
-
-> **Roadmap Update — March 2026**  
-> The originally planned release of **v1.2.0** (late February 2026) has been **postponed to early April 2026**.  
+> **Roadmap Update – March 2026**  
+> The originally planned release of **v1.2.0** (late February 2026) has been postponed to **early April 2026**.  
 >  
-> During development of the new **Print Editor**, additional functionality became necessary to properly support the new workflow system.  
+> During development of the new **Print Editor**, additional functionality became necessary to properly support the production workflow.  
 >  
-> As a result, **machine configuration and production order management** were added to the same release so that the Print Editor can be fully integrated into the production workflow.
+> As a result, **machine configuration** and **order management** were added to the same release.
 
 ---
 
 ## Version 1.2.0 — Early April 2026
 
-Version **1.2** introduces the first **production workflow system** in Herzog CAB.
-
-This allows users to organize their entire production setup — from machine configuration to calculations and final documentation.
-
-### 🖨️ Print Editor
-A completely new **Print Editor** allows flexible creation of production sheets.
-
-Features:
+### Print Editor
 
 - Drag-and-drop print layout editor
-- Customizable tables, logos and text elements
+- Customizable tables, logos and text
 - Flexible grid layout
-- Editable print components
+- Editable print elements
 - Generate machine setup sheets
 
----
+### Machine Configuration
 
-### ⚙️ Machine Configuration
-
-Users can now create and manage their **own braiding machines**.
-
-Features:
-
-- Create custom machines
+- Create custom braiding machines
 - Store machine configurations
-- Use machines in calculations and production setups
+- Use machines in calculations
 
----
-
-### 📋 Order Management
+### Order Management
 
 Production setups can now be organized using **orders**.
 
-Features:
-
 - Create production orders
-- Assign machines to an order
+- Assign machines
 - Add materials and spools
 - Perform calculations
 - Generate braid designs
-- Save and manage production configurations
+- Save production setups
 
 ---
 
 ## Version 1.3.0 — Early May 2026
 
-### 🎨 Color Database
+### Color Database
 
-Version **1.3** introduces centralized color management.
-
-Features:
+Centralized color management.
 
 - Central color database
 - Pantone colors
 - Custom colors
 - Reusable color palettes
-- Consistent color usage across braid designs
 
 ---
 
@@ -112,8 +110,12 @@ Features:
 
 ---
 
-Latest Version: **1.1.4**
+## Latest Version
+
+**1.1.4**
 
 ---
 
-# Changelog / Release Notes
+## Release Notes
+
+Full changelog → **[CHANGELOG.md](CHANGELOG.md)**
