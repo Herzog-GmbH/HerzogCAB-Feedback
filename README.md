@@ -55,6 +55,12 @@ Create a **Feature Request** issue and describe the use case.
 
 The following roadmap outlines the upcoming development focus for Herzog CAB.
 
+---
+
+![Herzog CAB Roadmap](docs/Roadmap.png)
+
+---
+
 > **Roadmap Update – March 2026**  
 > The originally planned release of **v1.2.0** (late February 2026) has been postponed to **early April 2026**.  
 >  
