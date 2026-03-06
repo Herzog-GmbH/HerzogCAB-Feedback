@@ -116,7 +116,7 @@ Centralized color management.
 
 ---
 
-## Latest Version 1.1.4
+## Latest Version: 1.1.4
 
 
 ---
