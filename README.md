@@ -112,10 +112,6 @@ Centralized color management.
 
 ---
 
-![Herzog CAB Roadmap](docs/Roadmap.png)
-
----
-
 ## Latest Version: 1.1.4
 
 
