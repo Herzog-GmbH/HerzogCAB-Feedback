@@ -53,7 +53,7 @@ const issueNumber = issueUrl.split('/').pop();
 
 run('gh', ['project', 'item-add', String(targetProject), '--owner', targetOwner, '--url', issueUrl]);
 
-const comment = `Intern übernommen: ${targetRepo}#${issueNumber}\n\nLink: ${issueUrl}\n\nDieses Thema wird ab jetzt im privaten Backlog und in Project #${targetProject} weiterverfolgt.`;
+const comment = `Thanks for the report — we've added this to our internal backlog and will continue tracking the work internally.`;
 run('gh', ['issue', 'comment', String(issue.number), '--repo', feedbackRepo, '--body', comment]);
 
 try {
