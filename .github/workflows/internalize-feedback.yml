@@ -1,0 +1,38 @@
+name: Internalize feedback issue
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  internalize:
+    if: github.event.label.name == 'internalize'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feedback repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install GitHub CLI
+        run: |
+          type gh >/dev/null 2>&1 || {
+            sudo apt-get update
+            sudo apt-get install -y gh
+          }
+
+      - name: Internalize issue into private backlog
+        env:
+          GH_TOKEN: ${{ secrets.HERZOG_INTERNAL_AUTOMATION_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.HERZOG_INTERNAL_AUTOMATION_TOKEN }}
+          TARGET_REPO: Herzog-GmbH/HerzogCAB
+          TARGET_PROJECT_OWNER: Herzog-GmbH
+          TARGET_PROJECT_NUMBER: '4'
+        run: node .github/scripts/internalize-feedback-issue.js
