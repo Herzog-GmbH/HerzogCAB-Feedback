@@ -1,8 +1,7 @@
 # Herzog CAB
-
 Braiding design and calculation software for Herzog braiding machines.
 
-![Version](https://img.shields.io/badge/version-1.1.4-blue)
+![Version](https://img.shields.io/badge/version-1.3.0-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
@@ -10,22 +9,23 @@ Braiding design and calculation software for Herzog braiding machines.
 
 ## About
 
-Herzog CAB is a software tool for designing and calculating braids used on Herzog braiding machines.
+HerzogCAB is a software tool for designing and calculating braids used on Herzog braiding machines.
 
 It allows users to:
-
-- design round and flat braids
-- perform braid calculations
-- manage machines and production data
-- generate production documentation
+- Design round and flat braids with 3D preview
+- Perform braid calculations across all major parameters
+- Manage machines, materials, bobbins and customers
+- Create and track production orders
+- Design custom print templates and generate production documentation
+- Manage color palettes and Pantone references
 
 The project is actively developed and continuously improved.
 
 ---
 
-# How to Contribute
+## How to Contribute
 
-Your feedback helps improve Herzog CAB.
+Your feedback helps improve HerzogCAB.
 
 ### 🐞 Bug Reports
 
@@ -36,84 +36,82 @@ If you encounter a problem:
 3. Select **Bug Report**
 
 Include:
-
-- software version
-- screenshots
-- steps to reproduce
+- Software version (shown in the title bar)
+- Windows version
+- Steps to reproduce
+- Screenshots if possible
 
 ---
 
 ### 💡 Feature Requests
 
-Have an idea for improving Herzog CAB?
-
-Create a **Feature Request** issue and describe the use case.
-
----
-
-# Development Roadmap
-
-The following roadmap outlines the upcoming development focus for Herzog CAB.
+Have an idea for improving HerzogCAB?  
+Create a **Feature Request** issue and describe your use case.
 
 ---
 
-![Herzog CAB Roadmap](docs/Roadmap.png)
+## Development Roadmap
 
 ---
 
-> **Roadmap Update – March 2026**  
-> The originally planned release of **v1.2.0** (late February 2026) has been postponed to **early April 2026**.  
->  
-> During development of the new **Print Editor**, additional functionality became necessary to properly support the production workflow.  
->  
-> As a result, **machine configuration** and **order management** were added to the same release.
-
----
-
-## Version 1.2.0 — Early April 2026
+## ✅ Version 1.2.0 — Released February 2026
 
 ### Print Editor
-
 - Drag-and-drop print layout editor
-- Customizable tables, logos and text
-- Flexible grid layout
-- Editable print elements
-- Generate machine setup sheets
+- Customizable tables, company logo and text elements
+- Flexible grid layout with configurable page margins
+- Live print preview synchronized with the designer
+- Generate machine setup sheets and production documents
+- Save and manage multiple print templates
 
-### Machine Configuration
+---
 
-- Create custom braiding machines
-- Store machine configurations
-- Use machines in calculations
+## ✅ Version 1.3.0 — Released April 2026
 
 ### Order Management
+Production setups can now be organized using orders with a full timeline-based overview.
+- Create and manage production orders
+- Filter by status (Draft, Released, In Production, Completed)
+- Assign machines, materials, bobbins and designs to each order
+- Launch calculations directly from an order with parameters pre-filled
 
-Production setups can now be organized using **orders**.
+### Braiding Machine Database
+- Create and manage your machine fleet
+- Store photos, technical specs, carrier count and RPM
+- Attach documents (manuals, drawings, maintenance records)
+- Machines are available across the entire application
 
-- Create production orders
-- Assign machines
-- Add materials and spools
-- Perform calculations
-- Generate braid designs
-- Save production setups
+### Customer Database
+- Create, edit and search customers
+- Customer records link directly to orders
+
+### Bobbin Database — Rebuilt
+- New management interface with machine-type filtering
+- Supports round, square, horizontal, carbon fiber and wire braiding machines
+
+### Material Database — Rebuilt
+- New management interface
+- Store linear density, diameter and other technical properties
+
+### Color Database — Rebuilt
+- Color picker with live preview
+- Pantone matching
+- Custom color palettes
+
+### Guided Tours
+- Ten interactive tours covering every module
+- Step-by-step overlay hints directly inside the app
+
+### Further Improvements
+- Adjustable font size (Standard / Large)
+- New unified icon set
+- Toast notifications
+- First-run setup assistant for working directory configuration
+- Full translations in 6 languages: 🇩🇪 🇬🇧 🇪🇸 🇮🇹 🇵🇱 🇨🇳
 
 ---
 
-## Version 1.3.0 — Early May 2026
-
-### Color Database
-
-Centralized color management.
-
-- Central color database
-- Pantone colors
-- Custom colors
-- Reusable color palettes
-
----
-
-## Latest Version: 1.1.4
-
+## Latest Version: 1.3.0
 
 ---
 
