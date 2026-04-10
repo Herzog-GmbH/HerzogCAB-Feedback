@@ -1,4 +1,4 @@
-# Herzog CAB
+# HerzogCAB
 Braiding design and calculation software for Herzog braiding machines.
 
 ![Version](https://img.shields.io/badge/version-1.3.0-blue)
@@ -54,18 +54,6 @@ Create a **Feature Request** issue and describe your use case.
 
 ---
 
-## ✅ Version 1.2.0 — Released February 2026
-
-### Print Editor
-- Drag-and-drop print layout editor
-- Customizable tables, company logo and text elements
-- Flexible grid layout with configurable page margins
-- Live print preview synchronized with the designer
-- Generate machine setup sheets and production documents
-- Save and manage multiple print templates
-
----
-
 ## ✅ Version 1.3.0 — Released April 2026
 
 ### Order Management
@@ -108,6 +96,18 @@ Production setups can now be organized using orders with a full timeline-based o
 - Toast notifications
 - First-run setup assistant for working directory configuration
 - Full translations in 6 languages: 🇩🇪 🇬🇧 🇪🇸 🇮🇹 🇵🇱 🇨🇳
+
+---
+
+## ✅ Version 1.2.0 — Released February 2026
+
+### Print Editor
+- Drag-and-drop print layout editor
+- Customizable tables, company logo and text elements
+- Flexible grid layout with configurable page margins
+- Live print preview synchronized with the designer
+- Generate machine setup sheets and production documents
+- Save and manage multiple print templates
 
 ---
 
