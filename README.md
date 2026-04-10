@@ -63,28 +63,52 @@ Production setups can now be organized using orders with a full timeline-based o
 - Assign machines, materials, bobbins and designs to each order
 - Launch calculations directly from an order with parameters pre-filled
 
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/f119d9ae-84d9-46f0-9966-6f3c88ec4216" autoplay loop muted playsinline width="700"></video>
+</div>
+
 ### Braiding Machine Database
 - Create and manage your machine fleet
 - Store photos, technical specs, carrier count and RPM
 - Attach documents (manuals, drawings, maintenance records)
 - Machines are available across the entire application
 
+<div align="center">
+  <img width="700" alt="Braiding Machine Database" src="https://github.com/user-attachments/assets/0e8b2a0a-58a3-4a1c-8dc0-a77ad3529101" />
+</div>
+
 ### Customer Database
 - Create, edit and search customers
 - Customer records link directly to orders
+
+<div align="center">
+  <img width="700" alt="Customer Database" src="https://github.com/user-attachments/assets/5252f286-509d-498b-b33f-d30046838391" />
+</div>
 
 ### Bobbin Database — Rebuilt
 - New management interface with machine-type filtering
 - Supports round, square, horizontal, carbon fiber and wire braiding machines
 
+<div align="center">
+  <img width="700" alt="Bobbin Database" src="https://github.com/user-attachments/assets/93dd17a4-ac0d-440f-9a55-819a7704d296" />
+</div>
+
 ### Material Database — Rebuilt
 - New management interface
 - Store linear density, diameter and other technical properties
+
+<div align="center">
+  <img width="700" alt="Material Database" src="https://github.com/user-attachments/assets/bfe3f6b4-8c3a-440b-a3f3-08aae44c2421" />
+</div>
 
 ### Color Database — Rebuilt
 - Color picker with live preview
 - Pantone matching
 - Custom color palettes
+
+<div align="center">
+  <img width="700" alt="Color Database" src="https://github.com/user-attachments/assets/52e087f0-0e22-4519-8655-68a57a3c4543" />
+</div>
 
 ### Guided Tours
 - Ten interactive tours covering every module
@@ -108,6 +132,10 @@ Production setups can now be organized using orders with a full timeline-based o
 - Live print preview synchronized with the designer
 - Generate machine setup sheets and production documents
 - Save and manage multiple print templates
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/47e5ad5b-3be5-4113-ba9f-1da9a94125df" autoplay loop muted playsinline width="700"></video>
+</div>
 
 ---
 
