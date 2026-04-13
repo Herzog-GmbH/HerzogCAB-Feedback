@@ -1,4 +1,4 @@
-# HerzogCAB
+# Herzog CAB
 
 Braiding design and calculation software for Herzog braiding machines.
 
