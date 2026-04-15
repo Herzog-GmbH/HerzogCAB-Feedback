@@ -13,6 +13,7 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ### Bugfixes
 
+- **Round Braid — All Occupation Types** — Round braid machines now correctly allow all three occupation types to be selected. Previously some occupation modes were incorrectly restricted.
 - **Lay Length translation (DE)** — The result-unit dropdown in the Lay Length calculation incorrectly showed "Berechnung [#]" in German; corrected to "Schlaglänge [mm]".
 - **QR Code reliability** — Mask pattern selection now uses penalty scoring (N1–N4) per spec, format information bits are placed correctly, and a Reed-Solomon ECC index offset is fixed. QR codes scan reliably across all standard apps.
 

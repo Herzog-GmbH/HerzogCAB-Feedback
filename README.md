@@ -68,6 +68,7 @@ Occupation overview and braid pattern images in the web interface now scale to f
 
 ### Bugfixes
 
+- Fixed round braid machines incorrectly restricting available occupation types — all three modes are now selectable
 - Fixed incorrect German label "Berechnung [#]" in the result unit dropdown of the Lay Length calculation — now correctly shows "Schlaglänge [mm]"
 - Improved QR code reliability: mask pattern selection now uses penalty scoring (N1–N4) per spec, format information bits are placed correctly, and a Reed-Solomon ECC index offset is fixed
 
