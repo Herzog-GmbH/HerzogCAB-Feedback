@@ -4,6 +4,20 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.3.3 — 2026-04-15
+
+### Improvements
+
+- **QR Code IP Selector** — New dropdown in Settings → Web Server to manually choose which network adapter IP is encoded in the QR code. Prevents VPN or virtual adapters from being auto-selected when multiple interfaces are active. Selection persists per profile.
+- **Responsive Web Images** — Occupation overview and braid pattern images in the browser interface now scale to fit any screen width and are no longer cut off on mobile.
+
+### Bugfixes
+
+- **Lay Length translation (DE)** — The result-unit dropdown in the Lay Length calculation incorrectly showed "Berechnung [#]" in German; corrected to "Schlaglänge [mm]".
+- **QR Code reliability** — Mask pattern selection now uses penalty scoring (N1–N4) per spec, format information bits are placed correctly, and a Reed-Solomon ECC index offset is fixed. QR codes scan reliably across all standard apps.
+
+---
+
 ## HerzogCAB 1.3.2 — 2026-04-13
 
 ### New

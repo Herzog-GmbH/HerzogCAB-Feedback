@@ -2,7 +2,7 @@
 
 Braiding design and calculation software for Herzog braiding machines.
 
-![Version](https://img.shields.io/badge/version-1.3.2-blue)
+![Version](https://img.shields.io/badge/version-1.3.3-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
@@ -53,6 +53,23 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.3.3 — Released April 2026
+
+### QR Code IP Selector
+
+The web server settings now include a dropdown to choose which network adapter IP is encoded in the QR code. This prevents virtual adapters (VPN, VirtualBox) from being selected automatically when multiple network interfaces are active. The selection is saved persistently per profile.
+
+### Responsive Web Images
+
+Occupation overview and braid pattern images in the web interface now scale to fit any screen width. Images were previously cut off on the right side on phones and smaller screens.
+
+### Bugfixes
+
+- Fixed incorrect German label "Berechnung [#]" in the result unit dropdown of the Lay Length calculation — now correctly shows "Schlaglänge [mm]"
+- Improved QR code reliability: mask pattern selection now uses penalty scoring (N1–N4) per spec, format information bits are placed correctly, and a Reed-Solomon ECC index offset is fixed
 
 ---
 
@@ -226,7 +243,7 @@ Production setups can now be organized using orders with a full timeline-based o
 
 ---
 
-## Latest Version: 1.3.2
+## Latest Version: 1.3.3
 
 ---
 
