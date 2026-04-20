@@ -4,18 +4,54 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
-## HerzogCAB 1.3.3 — 2026-04-15
+## HerzogCAB 1.3.4 — 2026-04-20
+
+### New
+
+- **In-App Update Dialog** — HerzogCAB now checks for updates from inside the application and applies them with one click
+  - Release notes shown directly in the dialog (German and English)
+  - New `Updates` menu entry to check on demand
+  - Automatic background check on startup with a confirmation dialog when the installed version is already current
+  - Full translations for dialog and status messages in all six supported languages
+- **System-Wide Windows Installer** — The new installer (Qt Installer Framework) registers HerzogCAB in Windows `Programs & Features`
+  - Entry with publisher, version and install date
+  - Desktop shortcut and Start menu entry created during installation
+  - Installer file name now includes the version (e.g. `HerzogCAB_Installer_1.3.4.exe`)
+- **Strictly Offline Installer** — The bundled installer always installs exactly the version shipped in the `.exe`, without pulling newer packages from the remote repository unexpectedly
 
 ### Improvements
 
-- **QR Code IP Selector** — New dropdown in Settings → Web Server to manually choose which network adapter IP is encoded in the QR code. Prevents VPN or virtual adapters from being auto-selected when multiple interfaces are active. Selection persists per profile.
-- **Responsive Web Images** — Occupation overview and braid pattern images in the browser interface now scale to fit any screen width and are no longer cut off on mobile.
+- **Smarter Admin-Rights Handling** — UAC prompt appears only during the initial installation; maintenance, update and uninstall flows elevate automatically when — and only when — admin rights are needed
+- **Clean Shutdown Before Update** — Web server and background threads are shut down cleanly during an update so the maintenance tool can replace running files
 
 ### Bugfixes
 
-- **Round Braid — All Occupation Types** — Round braid machines now correctly allow all three occupation types to be selected. Previously some occupation modes were incorrectly restricted.
-- **Lay Length translation (DE)** — The result-unit dropdown in the Lay Length calculation incorrectly showed "Berechnung [#]" in German; corrected to "Schlaglänge [mm]".
-- **QR Code reliability** — Mask pattern selection now uses penalty scoring (N1–N4) per spec, format information bits are placed correctly, and a Reed-Solomon ECC index offset is fixed. QR codes scan reliably across all standard apps.
+- Fixed uninstall from Windows Settings: the maintenance tool now launches reliably with admin rights via an elevation wrapper and no longer exits silently
+- Fixed missing translations for the update dialog and `No update available` messages across all supported languages
+
+---
+
+## HerzogCAB 1.3.3 — 2026-04-15
+
+### New
+
+- **Installer Routine & Auto-Update Foundation** — HerzogCAB is now delivered through a full offline installer based on the Qt Installer Framework
+  - Offline Windows installer with a bundled `MaintenanceTool`
+  - Pre-configured remote repository on GitHub Pages for future updates
+- **Multi-Profile Support** — Multiple company workspaces can now be maintained in parallel; each profile keeps its own settings, databases and working directory
+
+### Improvements
+
+- **Web Server QR Code & Responsive Images** — QR code in the header is now reliably scannable, IP address selection when multiple network interfaces are present, responsive images for tablets and phones
+- **macOS Build Pipeline** — `macdeployqt` and DMG creation added as post-link build steps
+- Round-braid machines now allow all carrier configurations (`Besetzungsarten`) in all dialogs
+
+### Bugfixes
+
+- Corrected German/English mix in the lay-length (`Schlaglänge`) dropdown
+- Added missing translations for the guided tour, settings dialog, parameter overview and the system tray
+- Fixed a black screen that could appear when closing the application on macOS
+- Fixed `#include` casing for macOS compatibility
 
 ---
 
@@ -60,6 +96,23 @@ All notable changes to HerzogCAB will be documented in this file.
 - Fixed SVG quote escaping in web UI onerror attributes
 - Fixed var shadowing bug in web UI that prevented design/occupation rendering
 - Removed unintended placeholder texts from serial number and group fields
+
+---
+
+## HerzogCAB 1.3.1 — 2026-04-10
+
+### Improvements
+
+- **Order Overview Redesign** — Redesigned as a two-column HTML table with colored section headers
+  - New `Order` block with order name, number, dates and status
+  - All labels wrapped for full translation coverage
+- **Print Editor Renaming** — `Klöppel` → `Besetzung`, `Flechtmaschinen-Übersicht` → `Besetzungsübersicht`
+  - New SVG icons for image, date/time and text elements
+  - Updated translations across all supported languages
+
+### Bugfixes
+
+- Fixed `carrier_table` incorrectly showing the bobbin table in the print editor
 
 ---
 

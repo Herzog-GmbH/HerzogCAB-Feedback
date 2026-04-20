@@ -1,8 +1,8 @@
-# Herzog CAB
+# HerzogCAB
 
 Braiding design and calculation software for Herzog braiding machines.
 
-![Version](https://img.shields.io/badge/version-1.3.3-blue)
+![Version](https://img.shields.io/badge/version-1.3.4-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
@@ -56,21 +56,69 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 
 ---
 
+## ✅ Version 1.3.4 — Released April 2026
+
+### In-App Update Dialog
+
+HerzogCAB can now check for updates from inside the application and apply them with a single click.
+
+- New **Updates** menu entry to check on demand and view release notes directly in the app
+- Release notes are fetched from GitHub Pages and shown in German and English
+- One-click update launches the maintenance tool, shuts down the web server and background threads cleanly, and replaces the running files
+- Automatic background check on startup, with a "no update available" confirmation when the version is up to date
+- Full translations for the update dialog and status messages in all six supported languages
+
+### System-Wide Windows Installer
+
+The new Windows installer registers HerzogCAB system-wide so it behaves like any other installed Windows application.
+
+- Entry in Windows **Programs & Features** with publisher, version and install date
+- Desktop shortcut and Start menu entry created during installation
+- Installer file name now includes the version (e.g. `HerzogCAB_Installer_1.3.4.exe`) for easier distribution and rollback
+- Strictly offline: the installer always installs the bundled version and no longer pulls newer packages from the update repository unexpectedly
+
+### Smarter Admin-Rights Handling
+
+- UAC prompt appears **only** during the initial installation
+- Maintenance, update and uninstall flows elevate automatically when — and only when — admin rights are needed
+- Fixed uninstall from Windows Settings: the maintenance tool now launches reliably with admin rights via an elevation wrapper instead of exiting silently
+
+---
+
 ## ✅ Version 1.3.3 — Released April 2026
 
-### QR Code IP Selector
+### Installer Routine & Auto-Update Foundation
 
-The web server settings now include a dropdown to choose which network adapter IP is encoded in the QR code. This prevents virtual adapters (VPN, VirtualBox) from being selected automatically when multiple network interfaces are active. The selection is saved persistently per profile.
+HerzogCAB is now delivered through a full offline installer based on the Qt Installer Framework, with the technical foundation for automatic updates.
 
-### Responsive Web Images
+- Offline Windows installer with a bundled `MaintenanceTool`
+- Pre-configured remote repository on GitHub Pages for future updates
+- Version number officially bumped to 1.3.3
 
-Occupation overview and braid pattern images in the web interface now scale to fit any screen width. Images were previously cut off on the right side on phones and smaller screens.
+### Multi-Profile Support
 
-### Bugfixes
+Multiple company workspaces can now be maintained in parallel.
 
-- Fixed round braid machines incorrectly restricting available occupation types — all three modes are now selectable
-- Fixed incorrect German label "Berechnung [#]" in the result unit dropdown of the Lay Length calculation — now correctly shows "Schlaglänge [mm]"
-- Improved QR code reliability: mask pattern selection now uses penalty scoring (N1–N4) per spec, format information bits are placed correctly, and a Reed-Solomon ECC index offset is fixed
+- Switch between profiles without losing data
+- Each profile keeps its own settings, databases and working directory
+
+### Web Server — QR Code & Responsive Images
+
+- QR code in the header is now reliably scannable from mobile devices
+- IP address selection when multiple network interfaces are present
+- Responsive images in the machine view so previews scale correctly on tablets and phones
+
+### macOS Build Pipeline
+
+- `macdeployqt` and DMG creation added as post-link build steps
+- Fixed include-casing issues that broke the macOS build
+- Resolved a black-screen bug that could appear when closing the application on macOS
+
+### Translation & UI Fixes
+
+- Corrected German/English mix in the lay-length (`Schlaglänge`) dropdown
+- Added missing translations for the guided tour, settings dialog, parameter overview and the system tray
+- Round-braid machines now allow all carrier configurations (`Besetzungsarten`) in all dialogs
 
 ---
 
@@ -79,11 +127,6 @@ Occupation overview and braid pattern images in the web interface now scale to f
 ### Built-in Web Server for Machine Displays
 
 HerzogCAB now includes an integrated web server that can be accessed from any browser on the local network — ideal for a tablet or monitor mounted at the braiding machine.
-
-<div align="center">
-  <img width="700" alt="Web Server Overview" src="https://github.com/user-attachments/assets/bac7f973-8f0c-4723-b1bc-c88a0d2e9b39" />
-</div>
-
 
 - **Machine landing page** with grid overview of all machines
 - **Order view** per machine showing assigned orders with status, customer, material and braid design
@@ -94,10 +137,6 @@ HerzogCAB now includes an integrated web server that can be accessed from any br
 - **Password protection** with login page, session cookies, logout button and automatic session invalidation on password change
 - **Configurable display settings** per order section with auto-refresh and scroll preservation
 - Modern UI with Herzog branding (#004B93), sticky navbar, SVG icons and responsive layout
-
-<div align="center">
-  <img width="700" alt="Web Server Mobile" src="https://github.com/user-attachments/assets/3e292555-8b0b-451c-831a-1d8879aad12a" />
-</div>
 
 ### Machine Serial Number and Group
 
@@ -244,7 +283,7 @@ Production setups can now be organized using orders with a full timeline-based o
 
 ---
 
-## Latest Version: 1.3.3
+## Latest Version: 1.3.4
 
 ---
 
