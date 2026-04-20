@@ -1,6 +1,18 @@
+<div align="center">
+  <img src="assets/herzog-logo.png" width="380" alt="Herzog — Since 1861">
+</div>
+
 # HerzogCAB
 
 Braiding design and calculation software for Herzog braiding machines.
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=RfBv-kayuIk">
+    <img src="https://img.youtube.com/vi/RfBv-kayuIk/maxresdefault.jpg" width="700" alt="HerzogCAB — Product Overview (click to watch on YouTube)">
+  </a>
+  <br>
+  <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
+</div>
 
 ![Version](https://img.shields.io/badge/version-1.3.4-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
