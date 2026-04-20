@@ -1,0 +1,43 @@
+{
+  "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
+  "versions": [
+    {
+      "version": "1.3.4",
+      "date": "2026-04-20",
+      "highlights": {
+        "de": [
+          "Neuer Update-Dialog: Aktualisierungen werden direkt in der Anwendung angezeigt – inklusive Release Notes und Ein-Klick-Update über das Menü 'Updates'.",
+          "Installation läuft jetzt systemweit mit UAC-Abfrage: Herzog CAB erscheint in der Windows-Systemsteuerung unter Programme & Features, inklusive Desktop-Verknüpfung.",
+          "Deinstallation aus den Windows-Einstellungen funktioniert zuverlässig: das Wartungsprogramm wird jetzt mit Admin-Rechten gestartet und beendet sich nicht mehr stillschweigend.",
+          "Admin-Rechte werden nur noch bei der Erstinstallation angefordert; Maintenance- und Update-Läufe elevieren automatisch nur bei Bedarf.",
+          "Webserver und Hintergrund-Threads werden beim Update sauber beendet, damit das Wartungsprogramm die Dateien ersetzen kann.",
+          "Installer ist jetzt strikt offline und installiert immer die mitgelieferte Version, ohne unerwartet neuere Pakete vom Server nachzuladen.",
+          "Installer-Dateiname enthält jetzt automatisch die Version (z. B. HerzogCAB_Installer_1.3.4.exe)."
+        ],
+        "en": [
+          "New update dialog: updates are shown directly inside the application – including release notes and one-click update via the 'Updates' menu.",
+          "Installation now runs system-wide with a UAC prompt: Herzog CAB shows up in Windows Programs & Features, with a desktop shortcut.",
+          "Uninstall from Windows Settings works reliably: the maintenance tool is launched with admin rights and no longer exits silently.",
+          "Admin rights are now requested only on the initial install; maintenance and update runs elevate automatically only when needed.",
+          "Web server and background threads are now shut down cleanly during the update so the maintenance tool can replace the files.",
+          "The installer is now strictly offline and always installs the bundled version, without unexpectedly pulling newer packages from the server.",
+          "The installer file name now automatically includes the version (e.g. HerzogCAB_Installer_1.3.4.exe)."
+        ]
+      }
+    },
+    {
+      "version": "1.3.3",
+      "date": "2026-04-15",
+      "highlights": {
+        "de": [
+          "Erste Installer-Routine mit Qt Installer Framework: Herzog CAB wird jetzt über einen vollständigen Offline-Installer ausgeliefert.",
+          "Grundlage für das Auto-Update-System: Das mitgelieferte Maintenance-Tool kennt das RemoteRepository auf GitHub Pages und kann Updates nachziehen."
+        ],
+        "en": [
+          "First installer routine based on the Qt Installer Framework: Herzog CAB is now delivered via a full offline installer.",
+          "Foundation for the auto-update system: the bundled maintenance tool knows the remote repository on GitHub Pages and can pull updates."
+        ]
+      }
+    }
+  ]
+}
