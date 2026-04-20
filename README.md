@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="assets/herzog-logo.png" width="380" alt="Herzog — Since 1861">
-</div>
-
 # HerzogCAB
 
 Braiding design and calculation software for Herzog braiding machines.
@@ -12,11 +8,11 @@ Braiding design and calculation software for Herzog braiding machines.
   </a>
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
+  <br><br>
+  <img src="https://img.shields.io/badge/version-1.3.4-blue" alt="Version">
+  <img src="https://img.shields.io/badge/status-active-green" alt="Status">
+  <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
-
-![Version](https://img.shields.io/badge/version-1.3.4-blue)
-![Status](https://img.shields.io/badge/status-active-green)
-![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
 ---
 
