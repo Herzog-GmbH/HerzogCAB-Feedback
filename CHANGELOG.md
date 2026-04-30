@@ -24,6 +24,10 @@ All notable changes to HerzogCAB will be documented in this file.
 - **Smarter Admin-Rights Handling** — UAC prompt appears only during the initial installation; maintenance, update and uninstall flows elevate automatically when — and only when — admin rights are needed
 - **Clean Shutdown Before Update** — Web server and background threads are shut down cleanly during an update so the maintenance tool can replace running files
 
+### Known Issues
+
+- Workspace location is requested on every startup (settings are not persisted correctly)
+
 ### Bugfixes
 
 - Fixed uninstall from Windows Settings: the maintenance tool now launches reliably with admin rights via an elevation wrapper and no longer exits silently
