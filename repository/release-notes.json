@@ -2,6 +2,30 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.3.5",
+      "date": "2026-05-07",
+      "highlights": {
+        "de": [
+          "Komplett neue Benutzer-, Rollen- und Profilverwaltung in einer eigenen Navigationsgruppe 'Systemverwaltung' – zentrale Speicherung unter ProgramData, mehrere Arbeitsplätze können sich eine Benutzerdatenbank zuverlässig teilen.",
+          "Login wird jetzt vor der Workspace-Auswahl abgefragt; Profilwechsel startet die Anwendung sauber neu.",
+          "Neue Firmendaten-Verwaltung mit Logo, Adresse, Steuer- und Handelsregisterdaten – direkt als {{company.*}}-Token in den Druckvorlagen verfügbar.",
+          "Granulare Rechte pro Modul: neue Berechtigungen 'Rollen verwalten', 'Firmendaten verwalten' und 'Parameter Explorer öffnen' können einzeln zugewiesen werden.",
+          "Druckvorlagen mit automatischem Seitenumbruch, Section-Titeln und einheitlichem Herzog-Tabellendesign; jede Vorlage in einer eigenen Datei.",
+          "Mausrad-Schutz in langen Formularen: Scrollen über Combobox oder Spinbox verstellt nicht mehr versehentlich Werte – der Dialog scrollt stattdessen.",
+          "52 fehlende chinesische Übersetzungen ergänzt; Toast-Meldung beim Speichern einer Rolle hinzugefügt und übersetzt."
+        ],
+        "en": [
+          "Brand-new user, role and profile administration in a dedicated 'System Administration' navigation group – central storage under ProgramData, multiple workstations can share one user database reliably.",
+          "Login is now requested before the workspace is selected; profile switching cleanly restarts the application.",
+          "New company-data module with logo, address, tax and commercial-register details – available directly as {{company.*}} tokens in print templates.",
+          "Granular per-module permissions: new rights for 'Manage roles', 'Manage company data' and 'Open Parameter Explorer' can be assigned individually.",
+          "Print templates with automatic pagination, section titles and unified Herzog table design; each template stored in its own file.",
+          "Mouse-wheel safety in long forms: scrolling over a combobox or spinbox no longer changes the value by accident – the dialog scrolls instead.",
+          "52 missing Chinese translations added; toast notification for role-save introduced and translated."
+        ]
+      }
+    },
+    {
       "version": "1.3.4",
       "date": "2026-04-20",
       "highlights": {
