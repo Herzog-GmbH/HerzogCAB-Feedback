@@ -206,4 +206,3 @@ Multiple company workspaces can now be maintained in parallel.
 Earlier releases (1.3.2, 1.3.0, 1.2.0 and older) are documented in the full changelog.
 
 Full changelog → **[CHANGELOG.md](CHANGELOG.md)**
-              
