@@ -4,6 +4,47 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.3.5 — 2026-05-07
+
+### New
+
+- **User, Role and Profile Administration (new module)** — A complete administration suite for users, roles, profiles and company data has been added under a new "System Administration" navigation group
+  - Users, roles, profiles and the user database are stored centrally under `%ProgramData%/HerzogCAB`, independent of the working directory
+  - Login is requested before the workspace is opened; profile switching restarts the application cleanly
+  - Concurrent-write safety for the central user database via file locks — multiple workstations can now share a single user list reliably
+  - Profile pictures stored centrally too, so they follow the user across workspaces
+- **Granular Permissions (new)** — Each module in the navigation can now be permitted independently
+  - New permissions: `Manage roles`, `Open Parameter Explorer`, plus a separated `Manage company data` right
+  - The "System Administration" group is shown when the user has at least one of the four management permissions; each sub-entry (Users / Roles / Profiles / Company) is gated individually
+  - Realistic separation of duties, e.g. a managing director with only "Manage company data" sees and edits the company sheet without accessing user or role administration
+- **Company Data Module (new)** — Dedicated module for the company profile (logo, address, tax & commercial register, managing directors, contact details)
+  - Logo and address available as `{{company.*}}` tokens in the print editor for letterheads and footers
+  - Stored centrally in `%ProgramData%/HerzogCAB/company.json` so all workspaces on the same machine share one company sheet
+- **Print Template Auto-Pagination** — Print templates now flow across multiple pages automatically; new section titles and Herzog table styling for a consistent look across all printouts
+- **Print Templates Stored Per-File** — Each template is now its own JSON file under the workspace's `Printouts/templates/` folder. Existing data migrates automatically on first read.
+
+### Improvements
+
+- **Mouse-Wheel Safety in Forms** — Scrolling over a combobox or spinbox in long dialogs (e.g. "Create new machine") no longer changes the field's value by accident; the wheel always scrolls the surrounding form. Click into a field first to change its value with the keyboard or buttons.
+- **Toast Notification on Role Save** — Saving a role now shows the same inline toast as all other editors (`Role "X" has been saved.`), with full translations in all six supported languages
+- **Designer / Product Workflow** — Picker dialogs (material, bobbin, …) now use a deferred-apply pattern that no longer resets the selection on show; designer popups gained explicit `Save & Apply` and `Close without saving` actions
+- **Length on Bobbin in Product Tab** — The product tab now shows `Material length on bobbin` instead of the no-longer-tracked product length; product weight moved to the end of the production tab; yarn-length feed in the runtime calculation corrected
+- **Company Name Now a Global Setting** — The company name is a single workspace-wide setting (administrator-editable in the settings dialog), no longer stored per profile
+
+### Translations
+
+- 52 missing Chinese translations added (user / role / profile management strings)
+- German translation file cleaned up where source equals translation
+
+### Bugfixes
+
+- Fixed workspace location being requested on every startup (was carried over from 1.3.4 — settings are now persisted correctly with the new central profile storage)
+- Fixed combobox values being reset to index 0 on popup show: material/bobbin lookup now deferred via `QTimer::singleShot(0, …)` to avoid the showEvent race
+- Fixed company-data save buttons being gated by the wrong permission (`users.manage` instead of `company.manage`)
+- Fixed the role save toast not being translated at runtime due to a wrong translation context
+
+---
+
 ## HerzogCAB 1.3.4 — 2026-04-20
 
 ### New
@@ -23,10 +64,6 @@ All notable changes to HerzogCAB will be documented in this file.
 
 - **Smarter Admin-Rights Handling** — UAC prompt appears only during the initial installation; maintenance, update and uninstall flows elevate automatically when — and only when — admin rights are needed
 - **Clean Shutdown Before Update** — Web server and background threads are shut down cleanly during an update so the maintenance tool can replace running files
-
-### Known Issues
-
-- Workspace location is requested on every startup (settings are not persisted correctly)
 
 ### Bugfixes
 

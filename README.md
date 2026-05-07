@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.3.4-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.3.5-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -87,6 +87,50 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 
 ---
 
+## ✅ Version 1.3.5 — Released May 2026
+
+### User, Role and Profile Administration (new)
+
+A complete administration suite for users, roles, profiles and company data has been added under a dedicated **System Administration** navigation group.
+
+- Users, roles and profiles are stored centrally under `%ProgramData%/HerzogCAB`, independent of the workspace's working directory — multiple workstations can share one user database reliably
+- Login is requested **before** the workspace is opened; profile switching restarts the application cleanly to give a consistent state
+- Concurrent-write safety via file locks: simultaneous edits from multiple workstations no longer corrupt the user database
+- Profile pictures are stored centrally too, so they follow the user across workspaces
+
+### Granular Permissions (new)
+
+Each module in the navigation can now be permitted independently.
+
+- New permissions: **Manage roles**, **Manage company data**, **Open Parameter Explorer**
+- The "System Administration" group is visible as soon as the user has at least one of the four management permissions; each sub-entry (Users / Roles / Profiles / Company) is gated individually
+- This allows realistic separation of duties — e.g. a managing director with only "Manage company data" sees and edits the company sheet without touching users or roles
+
+### Company Data Module (new)
+
+A dedicated module for the company profile — logo, address, tax & commercial-register data, managing directors and contact details.
+
+- Logo and address are available as `{{company.*}}` placeholders in the print editor — perfect for letterheads and footers
+- Stored centrally in `%ProgramData%/HerzogCAB/company.json` so all workspaces on the same machine share one company sheet
+
+### Print Template Auto-Pagination
+
+Print templates now flow across multiple pages automatically with section titles and a unified Herzog table design.
+
+- Each template is stored as its own JSON file under `Printouts/templates/`
+- Existing templates migrate automatically on first read
+
+### Mouse-Wheel Safety in Forms
+
+Scrolling over a combobox or spinbox in long dialogs (e.g. "Create new machine") no longer changes the field's value by accident — the wheel always scrolls the surrounding form. Click into a field first to change its value with the keyboard or the field's buttons.
+
+### Translation Polish
+
+- 52 missing Chinese translations added (user / role / profile management strings)
+- German translation file cleaned up
+
+---
+
 ## ✅ Version 1.3.4 — Released April 2026
 
 ### In-App Update Dialog
@@ -153,7 +197,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.3.4
+## Latest Version: 1.3.5
 
 ---
 
@@ -162,3 +206,4 @@ Multiple company workspaces can now be maintained in parallel.
 Earlier releases (1.3.2, 1.3.0, 1.2.0 and older) are documented in the full changelog.
 
 Full changelog → **[CHANGELOG.md](CHANGELOG.md)**
+              
