@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.3.5-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.3.6-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -84,6 +84,27 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.3.6 — Released May 2026
+
+### Bobbin Master Data Reworked
+
+The bobbin master data editor was overhauled with a focus on accuracy and quality of life:
+
+- Outer diameter, core diameter and winding length are now entered with **1 decimal place** in **0.1 mm steps** (was integer-only).
+- Bobbin volume is entered/displayed with **2 decimal places** in **0.01 ccm steps**.
+- When a bobbin is selected, its **volume is auto-calculated** from outer diameter, core diameter and winding length — the same formula used by `BobbinVolume::calc` and the Job Editor. Historical bobbins with rounded or zero volumes get a clean value on first open; manual override remains possible.
+- A new **calculate-field button** (in the familiar Job-Editor style) recomputes the volume on demand. The styling was extracted into `UiTheme::calcFieldStyleSheet()` so other editors can reuse it.
+
+### Bobbin Combobox Stability (feedback issue #25)
+
+In `Material length on bobbin`, `Running time & bobbin set` and `Core-cover ropes`, the selected bobbin used to fall back to the first list item whenever the page was reopened or the popup was shown. `loadBobbins` now remembers the `BobbinDAO::id` across the refill — exactly like the already-stable material picker.
+
+### Navigation: User Profile Bar (feedback issue #28)
+
+The user profile bar at the bottom of the side navigation no longer remains as a roughly 36 px squeezed stripe when the navigation is collapsed. It is now fully hidden together with the navigation and shows up again when the navigation is expanded.
 
 ---
 
@@ -197,7 +218,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.3.5
+## Latest Version: 1.3.6
 
 ---
 

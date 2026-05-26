@@ -4,6 +4,21 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.3.6 — 2026-05-26
+
+### Improvements
+
+- **Bobbin Master Data Reworked** — Outer/core diameter and winding length now use 1 decimal place with 0.1 mm steps (was integer-only); the bobbin volume field uses 2 decimal places with 0.01 ccm steps.
+- **Bobbin Volume Auto-Calculated** — When a bobbin is selected, its volume is now automatically recomputed from outer diameter, core diameter and winding length (same formula as `BobbinVolume::calc` and the Job Editor). This also covers historical bobbins where the volume was stored as a rounded integer or as `0`. The field stays editable for manual overrides.
+- **Calculate-Field Button in Bobbin Editor** — A new calculate button in Job-Editor style (`calculate_field_action`) recomputes the volume from the entered dimensions on demand. The reusable helper `UiTheme::calcFieldStyleSheet()` was extracted so other editors can adopt the same control without copy/paste styling.
+
+### Bugfixes
+
+- **Bobbin Combobox Selection Survives Page Changes** *(feedback issue #25)* — In `Material length on bobbin`, `Running time & bobbin set` and `Core-cover ropes`, the selected bobbin no longer falls back to the first list item when the page is reopened or the popup is shown. `loadBobbins` now remembers the `BobbinDAO::id` across the refill, mirroring the already-stable material picker logic.
+- **User Profile Bar Hidden When Navigation Collapsed** *(feedback issue #28)* — The user profile bar at the bottom of the side navigation used to remain as a roughly 36 px squeezed stripe when the navigation was collapsed. It is now fully hidden together with the navigation and shows up again when the navigation is expanded.
+
+---
+
 ## HerzogCAB 1.3.5 — 2026-05-07
 
 ### New
