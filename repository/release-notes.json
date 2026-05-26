@@ -2,6 +2,26 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.3.6",
+      "date": "2026-05-26",
+      "highlights": {
+        "de": [
+          "Spulen-Stammdaten überarbeitet: Außen-, Kerndurchmesser und Wicklungslänge jetzt mit 1 Nachkommastelle in 0,1-mm-Schritten, Volumen mit 2 Nachkommastellen in 0,01-ccm-Schritten.",
+          "Spulen-Volumen wird beim Auswählen einer Spule jetzt automatisch aus den Maßen berechnet – auch für historische Spulen mit gerundeten oder Null-Werten in der Datenbank; manuelle Übersteuerung weiterhin möglich.",
+          "Neuer Berechnungs-Button im Spulen-Editor im Stil des Job-Editors (calculate_field_action) – berechnet das Volumen aus den eingegebenen Maßen auf Knopfdruck.",
+          "Spulen-Combobox-Auswahl bleibt bei Page-Wechsel und Popup-Show erhalten (Materiallänge auf Spule, Laufzeit & Spulensatz, Kern-Mantel-Seile) – analog zur bereits stabilen Material-Logik.",
+          "User-Profilleiste wird beim Einklappen der Seitenleiste jetzt komplett ausgeblendet, statt auf etwa 36 px gequetscht stehen zu bleiben."
+        ],
+        "en": [
+          "Bobbin master data reworked: outer/core diameter and winding length now use 1 decimal place in 0.1 mm steps; volume uses 2 decimal places in 0.01 ccm steps.",
+          "Bobbin volume is now auto-calculated from the dimensions when a bobbin is selected — including historical bobbins with rounded or zero values in the database; manual override still possible.",
+          "New calculate-field button in the bobbin editor in Job-Editor style (calculate_field_action) — computes the volume from the entered dimensions on demand.",
+          "Bobbin combobox selection now survives page changes and popup show events (Material length on bobbin, Running time & bobbin set, Core-cover ropes) — same logic as the already-stable material picker.",
+          "User profile bar is now fully hidden when the side navigation is collapsed, instead of remaining as a roughly 36 px stripe."
+        ]
+      }
+    },
+    {
       "version": "1.3.5",
       "date": "2026-05-07",
       "highlights": {
