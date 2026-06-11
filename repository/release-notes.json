@@ -2,6 +2,42 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.4.0",
+      "date": "2026-06-10",
+      "highlights": {
+        "de": [
+          "Neuer Home-Bereich — persönliche Startseite mit zuletzt verwendeten Berechnungen und Aufträgen, Favoriten, Schnellaktionen, Auftragsstatus-Übersicht, anstehenden Produktionen und Neuigkeiten. Ersetzt die bisherigen Start-Popups.",
+          "Auftragslänge im Auftrag — die insgesamt zu produzierende Geflechtslänge wird jetzt direkt im Auftrag erfasst. HerzogCAB berechnet daraus automatisch, wie viele Spulensätze gefahren werden müssen, die Gesamtlaufzeit und die Restlänge im letzten Satz. Maschinen mit mehreren Köpfen werden berücksichtigt (Abfrage, wie viele Köpfe den Auftrag fertigen).",
+          "Produktionsdaten im Ausdruck — Auftragsausdrucke enthalten jetzt eine Produktionstabelle mit Auftragslänge, Spulensätzen und Laufzeiten. Die Standard-Druckvorlagen aktualisieren sich beim ersten Start automatisch; selbst angepasste Vorlagen bleiben unverändert.",
+          "Auftrags-Editor übersichtlicher — Produktionsdaten in zwei Bereiche gegliedert (Produktionswerte / Hochrechnung auf die Auftragslänge); die Reiter Auftrag, Material, Spule und Produkt zeigen bei breitem Fenster zwei Spalten; flüssigeres Verhalten beim Ändern der Fenstergröße.",
+          "Alle Berechnungsseiten neu gestaltet — einheitliches, modernes Erscheinungsbild in der gesamten Anwendung; Pflichtfelder werden deutlich rot markiert; die Einheiten-Umrechner rechnen jetzt live während der Eingabe.",
+          "Hohlgeflecht überarbeitet — Beschriftungen und Design aktualisiert; neue grafische Schema-Darstellung des Geflechts.",
+          "Maschinenpark erweitert — Suchleiste, Filter nach Kategorie, Status, Geflechtsart und Standort, Sortierung; neues Feld 'Standort' je Maschine; Maschinenmaße (Länge/Breite) mit Berechnen-Button; spürbar schnellere Kartenansicht.",
+          "CSV-Import für Flechtmaschinen — Maschinen inklusive Bilder aus einer CSV-Datei importieren, mit Vorschau und Konfliktbehandlung; mehrere Maschinen gleichzeitig löschen (Strg+A / Strg-Klick).",
+          "Farbverwaltung neu — RAL Classic und Pantone Solid Coated integriert, Suche nach ähnlichen Farben per Hex-Wert, Referenzfarben pro Auftrag.",
+          "Designer verbessert — Speicherdialog mit Ordnerübersicht und Namensfeld; maximal zwei gleichzeitig geöffnete Designs; Fehler beim Laden gespeicherter Designs behoben.",
+          "Sprachwechsel ohne Neu-Anmeldung — nach einem Sprach- oder Profilwechsel startet HerzogCAB neu, ohne dass Sie sich erneut anmelden oder das Profil neu wählen müssen.",
+          "Vollständige Übersetzungen — alle Texte erscheinen jetzt in allen 6 Sprachen (DE/EN/ES/IT/PL/CN), einschließlich der Namen der Standard-Druckvorlagen und des Maschinen-Imports.",
+          "Fehlerbehebungen — Fachung aus dem Auftrag wird jetzt korrekt in die Berechnungen 'Materiallänge auf Spule' und 'Produktdurchmesser' übernommen; Umrechnungsfehler bei ST-Flechtern (französisch Zoll) behoben; Absturz in 'Benötigtes Material' behoben; diverse Übersetzungskorrekturen."
+        ],
+        "en": [
+          "New Home Area — personalised start page with recently used calculations and orders, favourites, quick actions, job-status overview, upcoming productions and news. Replaces the previous start-up popups.",
+          "Order Length — the total braid length to produce is now entered directly in the order. HerzogCAB automatically derives how many bobbin sets need to be run, the total runtime and the remaining length of the last set. Machines with multiple heads are supported (asks how many heads produce the order).",
+          "Production Data in Print — order printouts now include a production table with order length, bobbin sets and runtimes. The default print templates update automatically on first start; customised templates remain untouched.",
+          "Clearer Order Editor — production data grouped into two sections (production values / projection to order length); the Order, Material, Bobbin and Product tabs show two columns on wide windows; smoother window resizing.",
+          "All Calculation Pages Redesigned — consistent, modern look throughout the whole application; required fields are clearly highlighted in red; the unit converters now calculate live while typing.",
+          "Hollow Braid Reworked — updated labels and design; new graphical pattern diagram of the braid.",
+          "Machine Park Extended — search bar, filters by category, status, braid type and location, sorting; new 'Location' field per machine; machine dimensions (length/width) with calculate button; noticeably faster card view.",
+          "CSV Import for Braiding Machines — import machines including images from a CSV file, with preview and conflict handling; delete several machines at once (Ctrl+A / Ctrl-click).",
+          "Colour Management Reworked — RAL Classic and Pantone Solid Coated integrated, search for similar colours by hex value, reference colours per order.",
+          "Designer Improved — save dialog with folder overview and name field; a maximum of two designs open at the same time; fixed an error when loading saved designs.",
+          "Language Switch Without Re-Login — after changing the language or switching profiles, HerzogCAB restarts without asking you to log in or pick the profile again.",
+          "Complete Translations — all texts now appear in all 6 languages (DE/EN/ES/IT/PL/CN), including the names of the default print templates and the machine import.",
+          "Bugfixes — the ply count from the order is now correctly applied in the 'Material length on bobbin' and 'Product diameter' calculations; conversion error for ST braiders (French inch) fixed; crash in 'Required material' fixed; various translation corrections."
+        ]
+      }
+    },
+    {
       "version": "1.3.6",
       "date": "2026-05-26",
       "highlights": {
