@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.3.6-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.4.0-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -20,25 +20,33 @@ Braiding design and calculation software for Herzog braiding machines.
 
 HerzogCAB is the all-in-one design, calculation and production-management software for Herzog braiding machines. It combines the classic braid designer and calculation engine with a full set of master-data and order-tracking modules, so the entire workflow — from first design to machine setup on the shop floor — happens in one place.
 
+**Home**
+
+- Personalised start page with activity tracking, favourites and quick actions
+- Job-status tiles, upcoming productions and news cards — replacing the previous start-up popups
+
 **Design & Calculation**
 
 - Design round and flat braids with interactive 3D preview
 - Perform braid calculations across all major parameters (lay length, reduction, angle, running time, product length, …)
 - Texture coloring, stepwise carrier color rotation and Pantone-matched palettes
+- RAL Classic and Pantone Solid Coated colour libraries with hex-to-colour search and per-order reference colours
 
 **Master Data**
 
-- Braiding machine database with photos, technical specs, carrier count, RPM, serial number, group and attached documents (manuals, drawings, maintenance records)
+- Braiding machine database with photos, technical specs, carrier count, RPM, serial number, location, dimensions and attached documents (manuals, drawings, maintenance records)
+- Machine park with search, multi-filter (category, status, braid type, location) and sorting; CSV import with images
 - Customer database with direct links to orders
-- Bobbin, material and color databases — each with machine-type filtering and technical property tracking
+- Bobbin, material and colour databases — each with machine-type filtering and technical property tracking
 - Multi-profile support for parallel company workspaces, each with its own settings and databases
 
 **Order Management & Production**
 
 - Create and track production orders across the full lifecycle (Draft, Released, In Production, Completed)
+- Order length input with automatic projection: bobbin-set count, total runtime and remaining length in the last set — multi-head machines supported
 - Launch calculations directly from an order with parameters pre-filled
 - Assign machines, materials, bobbins and designs to each order
-- Drag-and-drop print editor with customizable templates for machine setup sheets and production documentation
+- Drag-and-drop print editor with customizable templates; production table (order length, bobbin sets, runtimes) included in default order printouts
 
 **Machine-Side Access**
 
@@ -84,6 +92,55 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.4.0 — Released June 2026
+
+### New Home Area
+
+A personalised start page replaces the previous start-up popups. It shows recently used calculations and orders, favourites, quick actions, a job-status overview, upcoming productions and a news section. The layout is fully customisable and persists per profile.
+
+### Order Length & Production Projection
+
+The total braid length to produce is now entered directly in the order. HerzogCAB automatically derives how many bobbin sets need to be run, the total runtime and the remaining length of the last set. Multi-head machines are supported — the order asks how many heads produce the product (default 1; existing orders are unaffected, no migration required).
+
+The default order print templates have been extended with a production table; existing default templates update automatically on first start, while user-customised templates remain untouched.
+
+### Complete UI Redesign (CalcForm Builder)
+
+All calculation pages are now built declaratively using a new `CalcFormBuilder`. This removes approximately 12,600 lines of boilerplate and gives every page a consistent, modern Soft-Industrial/Neumorphism look. Required fields are highlighted in red; unit converters calculate live while typing.
+
+### Machine Park Extended
+
+- Search bar and multi-filter (category, status, braid type, location) added to the machine fleet view
+- New **Location** field per machine; machine dimensions (length/width) with a calculate button
+- CSV import for braiding machines including images, with preview and conflict handling
+- Multi-select deletion with Ctrl+A / Ctrl-click
+- Noticeably faster card view
+
+### Colour Management Reworked
+
+RAL Classic and Pantone Solid Coated colour libraries are now integrated directly. A hex-to-colour search finds the closest match in both libraries. Reference colours can be assigned per order.
+
+### Designer Improvements
+
+The save dialog now shows a folder tree with an explicit name field. A maximum of two designs can be open simultaneously. A load error for previously saved designs has been fixed.
+
+### Language Switch Without Re-Login
+
+Changing the UI language or switching profiles now restarts HerzogCAB automatically without asking for login or profile selection again. The resumed session is recorded in the audit log; explicit logout still requires a fresh login.
+
+### Complete Translations
+
+All texts now appear in all 6 languages (DE/EN/ES/IT/PL/CN), including default print-template names and machine-import strings. Translation files report 0 unfinished entries (2812/2812).
+
+### Bugfixes
+
+- Ply count from the order is now correctly pre-filled in `Material length on bobbin` and `Product diameter`
+- ST braider (French inch) conversion corrected to 27 mm
+- Crash in `Required material` (use-after-free on a restacked layout) fixed
+- Various translation corrections across ES, IT, PL and CN
 
 ---
 
@@ -218,7 +275,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.3.6
+## Latest Version: 1.4.0
 
 ---
 
