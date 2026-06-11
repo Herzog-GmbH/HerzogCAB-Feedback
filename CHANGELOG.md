@@ -4,6 +4,41 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.4.0 — 2026-06-10
+
+### New
+
+- **Home Area** — A personalised start page replaces the previous start-up popups. It shows activity tracking, quick actions, favourites, job-status tiles, upcoming productions and news cards.
+- **Order Length & Production Projection** — New `Order length [m]` input in the order data (also editable in the production tab). HerzogCAB automatically derives bobbin-set changes per head, total bobbin sets, total runtime and the remaining length of the last set (new `OrderTotals` workflow step, live recalculation). Multi-head machines are supported: when the selected machine has more than one head, the order asks how many heads produce this order's product (default 1 — existing orders are unaffected, no data migration required).
+- **CSV Import for Braiding Machines** — Import machines including images from a CSV file. Multi-select deletion with Ctrl+A / Ctrl-click.
+- **Machine Dimensions** — Maintain length, width and location directly in machine administration; a calculate button derives related values automatically.
+- **Colour Management Reworked** — RAL Classic and Pantone Solid Coated colour palettes integrated; hex-to-colour search; reference colours per job.
+
+### Improvements
+
+- **Complete UI Redesign** — CalcForm Builder: all calculation pages are now built declaratively, removing ~12,600 lines of boilerplate. A Soft-Industrial/Neumorphism theme is applied consistently throughout the whole application.
+- **Machine Park Extended** — Search bar, filters by category, status, braid type and location, and column sorting added. New *Location* field per machine.
+- **Designer Improvements** — Save dialog now shows a folder tree with an explicit name field; maximum 2 panes open simultaneously; load bugfix for previously saved designs.
+- **Hollow Braid Reworked** — Updated labels and design; new graphical pattern diagram showing the braid structure.
+- **Production Data in Print** — The default order templates (`Default Order`, `Default Order (high carrier count)`) now include a production table with order length and the new projection values; existing default templates are migrated automatically on first start (user-renamed/customised templates remain untouched). Production values were also added to the print-editor defaults and the web order view.
+- **Clearer Order Editor** — Production data split into two sections (`Production values` / `Projection to order length`); the Order, Material, Bobbin and Product tabs switch to a two-column layout on wide windows (consistent with the Customer tab); machine tab label clarified to `Active carriers (per head)`; significantly smoother window resizing (form grids are only rebuilt when the column mode actually changes).
+- **Language Switch Without Re-Login** — Changing the UI language (and switching profiles) restarts the application without asking for login and profile selection again. Implemented as a single-use, 60-second restart ticket (`restart_session.h`) — no persistent session is introduced; explicit logout still requires a fresh login. Resumed sessions are recorded in the audit log (`login.resume_restart`).
+
+### Translations
+
+- Default print-template names are now translatable (`Default Order`, `Default Calculation`, …) — previously they appeared in German in every UI language because lupdate never picked up the `trPt()` helper strings; a `QT_TRANSLATE_NOOP` marker list fixes this permanently.
+- All remaining untranslated strings completed in all 6 languages (DE/EN/ES/IT/PL/CN): machine import (incl. the CSV format help), colour editor, licence notice, new order-length/production strings — translation files now report 0 unfinished entries (2812/2812).
+- 76 new strings and 21 machine categories translated in all 6 languages (DE/EN/ES/IT/PL/CN).
+- Offset error in job/bobbin translations fixed for ES, IT, PL and CN.
+
+### Bugfixes
+
+- **Ply Count Taken From the Order** — The `Material length on bobbin` and `Product diameter` calculation popups now pre-fill the ply count (`Fachung`) from the order's material tab (`material.thread_count_per_strand`) instead of always defaulting to 1.
+- **ST Braider Conversion** — `FL / French inch` now converts with 27 mm instead of 10 mm (production speed and runtime pages).
+- **Crash in Required Material** — Fixed a use-after-free on a restacked layout.
+
+---
+
 ## HerzogCAB 1.3.6 — 2026-05-26
 
 ### Improvements
