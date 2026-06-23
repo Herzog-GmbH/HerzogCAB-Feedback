@@ -2,6 +2,30 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.4.1",
+      "date": "2026-06-22",
+      "highlights": {
+        "de": [
+          "Neuer Hallenplaner (Produktionslayout) — Hallengrundrisse mit Außen- und Innenwänden, Flächen, Türen, Toren, Fenstern und Treppen zeichnen. Maschinen aus dem Katalog auf dem Grundriss platzieren, ausrichten, gleichmäßig verteilen, aneinanderreihen, drehen und duplizieren. Mit Maßstab, Raster- und Winkelfang sowie Mess-Werkzeug.",
+          "3D-Ansicht der Halle — den fertigen Grundriss inklusive Maschinen, Wand-Texturen, Bannern/Logos und Maschinenstatus räumlich betrachten.",
+          "Grundrisse als Stammdaten — Hallengrundriss und Belegung sind jetzt getrennt: ein Grundriss kann mehrere Belegungen/Szenarien haben (z. B. Ist-Zustand und Planvarianten), die unabhängig voneinander angelegt, umbenannt, dupliziert und verwaltet werden.",
+          "Medienbibliothek — zentrale Verwaltung aller Bilder (Flechtmaschinen, Wand-Texturen, Banner & Logos, Hallengrundrisse, Firmenlogo) mit Ordnern, Suche, Upload und Ersetzen; überall ein einheitlicher Bild-Auswahldialog.",
+          "Maschinenpark — neue Karten- und Listenansicht mit Statusanzeige für eine bessere Übersicht.",
+          "Erscheinungsbild umschaltbar — neues Bedienoberflächen-Design wahlweise „Flach“ oder „Neumorph“, live in den Einstellungen umschaltbar.",
+          "Verbesserte Rollen- und Benutzerverwaltung sowie zahlreiche Detailverbesserungen an der Oberfläche."
+        ],
+        "en": [
+          "New Factory Planner (production layout) — draw hall floor plans with exterior and interior walls, areas, doors, gates, windows and stairs. Place machines from the catalog on the plan, align, distribute evenly, line up, abut, rotate and duplicate them. Includes scale, grid/angle snapping and a measuring tool.",
+          "3D Hall View — view the finished floor plan in 3D, including machines, wall textures, banners/logos and machine status.",
+          "Floor Plans as Master Data — the hall floor plan and its assignment are now separate: a single floor plan can have several assignments/scenarios (e.g. the actual state and planning variants) that are created, renamed, duplicated and managed independently.",
+          "Media Library — central management of all images (braiding machines, wall textures, banners & logos, hall floor plans, company logo) with folders, search, upload and replace; a single consistent image picker everywhere.",
+          "Machine Park — new card and list views with status display for a better overview.",
+          "Switchable Appearance — new user-interface theme, either “Flat” or “Neumorphic”, switchable live in the settings.",
+          "Improved role and user management plus numerous interface refinements."
+        ]
+      }
+    },
+    {
       "version": "1.4.0",
       "date": "2026-06-10",
       "highlights": {
