@@ -6,19 +6,19 @@
   <Name>com.herzog.herzogcab</Name>
   <DisplayName>Herzog Cab Main Component</DisplayName>
   <Description>Install Herzog CAB Program.</Description>
-  <Version>1.4.1</Version>
-  <ReleaseDate>2026-06-22</ReleaseDate>
+  <Version>1.4.2</Version>
+  <ReleaseDate>2026-06-23</ReleaseDate>
   <SortingPriority>100</SortingPriority>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="44268672" OS="Any" UncompressedSize="107305717"/>
+  <UpdateFile CompressedSize="44288274" OS="Any" UncompressedSize="107312373"/>
   <DownloadableArchives>generic.7z,iconengines.7z,imageformats.7z,networkinformation.7z,platforms.7z,protected.7z,styles.7z,tls.7z,translations.7z,content.7z</DownloadableArchives>
   <UserInterfaces>page.ui</UserInterfaces>
   <Licenses>
    <License file="license.txt" name="Herzog License Agreement"/>
   </Licenses>
-  <SHA1>c32dd5a0f31b0e497858fc9cd008e76a4a2cb7d4</SHA1>
+  <SHA1>56c5d906ef9ada4c585f9d367ddd04ecf6dfeca7</SHA1>
  </PackageUpdate>
- <SHA1>a04928098f6c92f00bf05a55cc6d76d2d032d2a6</SHA1>
- <MetadataName>2026-06-23-0913_meta.7z</MetadataName>
+ <SHA1>f17b37d429b1be446e58a2ba5b08d28c21cb5a12</SHA1>
+ <MetadataName>2026-06-23-1451_meta.7z</MetadataName>
 </Updates>

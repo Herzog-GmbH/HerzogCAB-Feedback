@@ -2,6 +2,20 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.4.2",
+      "date": "2026-06-23",
+      "highlights": {
+        "de": [
+          "Behoben: Farbcode in der Klöppeltabelle — der angezeigte Farbcode (Kennung/Name/Hex/Pantone) konnte nach dem Drehen der Farben nicht mehr zur tatsächlichen Farbe passen. Der Code bleibt jetzt beim Drehen und beim Wechsel zwischen Designfenstern korrekt mit der Farbe verknüpft; bereits betroffene Designs werden beim Öffnen automatisch korrigiert (dauerhaft nach erneutem Speichern). Danke an Torstenbreckner für den Hinweis!",
+          "Tooltip in der Farbpalette wieder gut lesbar (heller Hintergrund) — bei Farbfeldern und Farbauswahl."
+        ],
+        "en": [
+          "Fixed: Bobbin table colour code — the displayed colour code (ID/name/hex/Pantone) could stop matching the actual colour after rotating the colours. The code now stays correctly linked to its colour when rotating and when switching between design windows; affected designs are corrected automatically on open (made permanent once saved again). Thanks to Torstenbreckner for the report!",
+          "Colour palette tooltip is legible again (light background) — for swatches and the colour picker."
+        ]
+      }
+    },
+    {
       "version": "1.4.1",
       "date": "2026-06-22",
       "highlights": {
