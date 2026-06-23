@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.4.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.4.1-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -92,6 +92,41 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.4.1 — Released June 2026
+
+### Factory Planner (Production Layout)
+
+Plan your braiding hall in 2D and view it in 3D.
+
+- Draw hall floor plans with **exterior and interior walls, areas, doors, gates, windows and stairs**
+- Place machines from the catalog on the plan — **align, distribute evenly, line up, abut, rotate and duplicate**
+- Scale, grid and angle snapping plus a measuring tool
+- **3D Hall View** of the finished plan including machines, wall textures, banners/logos and live machine status
+
+### Floor Plans as Master Data
+
+The hall floor plan and its assignment are now separate. A single floor plan can hold several **assignments/scenarios** (e.g. the actual state and planning variants) that are created, renamed, duplicated and managed independently.
+
+### Media Library
+
+Central management of all images — braiding machines, wall textures, banners & logos, hall floor plans and the company logo. Folders, search, upload and replace, with one consistent image picker everywhere.
+
+### Machine Park
+
+New **card and list views** with a status display for a better overview.
+
+### Switchable Appearance
+
+New user-interface theme, either **Flat** or **Neumorphic**, switchable live in the settings.
+
+### Improvements
+
+- Improved role and user management, including a dedicated permission for the Factory Planner
+- Standard dialog buttons (Save / Discard / Cancel) are now localized in all six languages
+- Numerous interface refinements and fixes
 
 ---
 
@@ -275,7 +310,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.4.0
+## Latest Version: 1.4.1
 
 ---
 
