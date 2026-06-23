@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.4.1-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.4.2-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -92,6 +92,15 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.4.2 — Released June 2026
+
+### Fixes
+
+- **Bobbin table colours (Issue #44)** — the colour code (ID/name/hex/Pantone) shown per carrier could disagree with the actual colour after rotating the design's colours. The colour definition now stays correctly linked to its colour during rotation and across design panes; designs saved before this fix are corrected automatically when reopened (made permanent once saved again). Thanks to @Torstenbreckner for the report.
+- **Colour palette tooltip** — fixed the dark, hard-to-read tooltip background on palette swatches and the colour picker.
 
 ---
 
@@ -310,7 +319,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.4.1
+## Latest Version: 1.4.2
 
 ---
 

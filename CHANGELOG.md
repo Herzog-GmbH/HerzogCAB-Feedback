@@ -4,6 +4,21 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.4.2 — 2026-06-23
+
+### Fixes
+
+- **Bobbin table colours (Issue #44)** — the colour code (ID/name/hex/Pantone)
+  shown per carrier could disagree with the actual colour after rotating the
+  design's colours. The colour definition now stays correctly linked to its
+  colour during rotation and across design panes; designs saved before this fix
+  are corrected automatically when reopened (made permanent once saved again).
+  Thanks to @Torstenbreckner for the report.
+- **Colour palette tooltip** — fixed the dark, hard-to-read tooltip background
+  on palette swatches and the colour picker.
+
+---
+
 ## HerzogCAB 1.4.1 — 2026-06-23
 
 ### New
