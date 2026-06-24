@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.4.2-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.4.3-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -92,6 +92,15 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.4.3 — Released June 2026
+
+### Factory Planner Fixes
+
+- **Alignment toolbar** — the toolbar above the drawing canvas (Edit · Align · Distribute · Line up) no longer stretches to fill the whole top area; it keeps a slim, fixed height and gives the space back to the canvas.
+- **Floor plan translations** — the area and object names in the floor plan (production area, transport route, storage area, maintenance, office, quality control, door, gate, window, stairs, banner/logo and the door styles) now appear translated in every UI language instead of in German. Shipped in all six languages (DE/EN/ES/IT/PL/CN).
 
 ---
 
@@ -319,7 +328,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.4.2
+## Latest Version: 1.4.3
 
 ---
 

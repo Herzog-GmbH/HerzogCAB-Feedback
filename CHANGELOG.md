@@ -4,6 +4,21 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.4.3 — 2026-06-24
+
+### Fixes
+
+- **Factory Planner alignment toolbar** — the alignment toolbar (Edit · Align ·
+  Distribute · Line up) above the drawing canvas stretched to fill the entire
+  top area. It now keeps a slim, fixed height; the canvas regains the space.
+- **Floor plan translations** — the area and object names in the Factory Planner
+  floor plan (production area, transport route, storage area, maintenance, office,
+  quality control, door, gate, window, stairs, banner/logo, door styles) were
+  hard-coded in German and stayed German in every other UI language. They are now
+  translatable and shipped in all six languages (DE/EN/ES/IT/PL/CN).
+
+---
+
 ## HerzogCAB 1.4.2 — 2026-06-23
 
 ### Fixes
