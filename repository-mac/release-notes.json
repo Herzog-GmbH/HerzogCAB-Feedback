@@ -1,0 +1,191 @@
+{
+  "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
+  "versions": [
+    {
+      "version": "1.4.4",
+      "date": "2026-06-30",
+      "highlights": {
+        "de": [
+          "Neue Anmeldemethoden — zusätzlich zur lokalen Benutzerverwaltung kann sich Herzog CAB jetzt über Microsoft Entra ID (Azure AD) und über LDAP/Active Directory anmelden. Benutzer und Gruppen lassen sich aus dem Verzeichnis übernehmen und Rollen automatisch anhand der Gruppenzugehörigkeit zuweisen.",
+          "Berechnungsfelder — Felder, die als Platzhalter einen Bindestrich anzeigen, lassen sich jetzt direkt beim Anklicken bearbeiten; Dezimalstellen werden dabei korrekt übernommen.",
+          "Behoben: Das Hauptfenster und der 3D-Hallenansicht-Dialog kommen nach dem Start bzw. beim Öffnen zuverlässig in den Vordergrund."
+        ],
+        "en": [
+          "New sign-in methods — in addition to local user management, Herzog CAB can now sign in via Microsoft Entra ID (Azure AD) and via LDAP/Active Directory. Users and groups can be imported from the directory and roles assigned automatically based on group membership.",
+          "Calculation fields — fields that show a dash as a placeholder can now be edited directly on click; decimal places are applied correctly.",
+          "Fixed: the main window and the 3D hall-view dialog reliably come to the foreground after startup or when opened."
+        ]
+      }
+    },
+    {
+      "version": "1.4.3",
+      "date": "2026-06-24",
+      "highlights": {
+        "de": [
+          "Behoben: Im Hallenplaner füllte die Ausrichten-Leiste über der Zeichenfläche den gesamten oberen Bereich aus. Sie hat jetzt wieder eine schlanke, feste Höhe.",
+          "Behoben: Die Flächen- und Objektnamen im Hallenplaner-Grundriss (Produktionsfläche, Transportweg, Tür, Tor, Fenster, Treppe, Banner/Logo …) erscheinen jetzt in allen Sprachen übersetzt statt auf Deutsch."
+        ],
+        "en": [
+          "Fixed: In the Factory Planner, the alignment toolbar above the drawing canvas filled the entire top area. It now has a slim, fixed height again.",
+          "Fixed: The area and object names in the Factory Planner floor plan (production area, transport route, door, gate, window, stairs, banner/logo …) now appear translated in every language instead of in German."
+        ]
+      }
+    },
+    {
+      "version": "1.4.2",
+      "date": "2026-06-23",
+      "highlights": {
+        "de": [
+          "Behoben: Farbcode in der Klöppeltabelle — der angezeigte Farbcode (Kennung/Name/Hex/Pantone) konnte nach dem Drehen der Farben nicht mehr zur tatsächlichen Farbe passen. Der Code bleibt jetzt beim Drehen und beim Wechsel zwischen Designfenstern korrekt mit der Farbe verknüpft; bereits betroffene Designs werden beim Öffnen automatisch korrigiert (dauerhaft nach erneutem Speichern). Danke an Torstenbreckner für den Hinweis!",
+          "Tooltip in der Farbpalette wieder gut lesbar (heller Hintergrund) — bei Farbfeldern und Farbauswahl."
+        ],
+        "en": [
+          "Fixed: Bobbin table colour code — the displayed colour code (ID/name/hex/Pantone) could stop matching the actual colour after rotating the colours. The code now stays correctly linked to its colour when rotating and when switching between design windows; affected designs are corrected automatically on open (made permanent once saved again). Thanks to Torstenbreckner for the report!",
+          "Colour palette tooltip is legible again (light background) — for swatches and the colour picker."
+        ]
+      }
+    },
+    {
+      "version": "1.4.1",
+      "date": "2026-06-22",
+      "highlights": {
+        "de": [
+          "Neuer Hallenplaner (Produktionslayout) — Hallengrundrisse mit Außen- und Innenwänden, Flächen, Türen, Toren, Fenstern und Treppen zeichnen. Maschinen aus dem Katalog auf dem Grundriss platzieren, ausrichten, gleichmäßig verteilen, aneinanderreihen, drehen und duplizieren. Mit Maßstab, Raster- und Winkelfang sowie Mess-Werkzeug.",
+          "3D-Ansicht der Halle — den fertigen Grundriss inklusive Maschinen, Wand-Texturen, Bannern/Logos und Maschinenstatus räumlich betrachten.",
+          "Grundrisse als Stammdaten — Hallengrundriss und Belegung sind jetzt getrennt: ein Grundriss kann mehrere Belegungen/Szenarien haben (z. B. Ist-Zustand und Planvarianten), die unabhängig voneinander angelegt, umbenannt, dupliziert und verwaltet werden.",
+          "Medienbibliothek — zentrale Verwaltung aller Bilder (Flechtmaschinen, Wand-Texturen, Banner & Logos, Hallengrundrisse, Firmenlogo) mit Ordnern, Suche, Upload und Ersetzen; überall ein einheitlicher Bild-Auswahldialog.",
+          "Maschinenpark — neue Karten- und Listenansicht mit Statusanzeige für eine bessere Übersicht.",
+          "Erscheinungsbild umschaltbar — neues Bedienoberflächen-Design wahlweise „Flach“ oder „Neumorph“, live in den Einstellungen umschaltbar.",
+          "Verbesserte Rollen- und Benutzerverwaltung sowie zahlreiche Detailverbesserungen an der Oberfläche."
+        ],
+        "en": [
+          "New Factory Planner (production layout) — draw hall floor plans with exterior and interior walls, areas, doors, gates, windows and stairs. Place machines from the catalog on the plan, align, distribute evenly, line up, abut, rotate and duplicate them. Includes scale, grid/angle snapping and a measuring tool.",
+          "3D Hall View — view the finished floor plan in 3D, including machines, wall textures, banners/logos and machine status.",
+          "Floor Plans as Master Data — the hall floor plan and its assignment are now separate: a single floor plan can have several assignments/scenarios (e.g. the actual state and planning variants) that are created, renamed, duplicated and managed independently.",
+          "Media Library — central management of all images (braiding machines, wall textures, banners & logos, hall floor plans, company logo) with folders, search, upload and replace; a single consistent image picker everywhere.",
+          "Machine Park — new card and list views with status display for a better overview.",
+          "Switchable Appearance — new user-interface theme, either “Flat” or “Neumorphic”, switchable live in the settings.",
+          "Improved role and user management plus numerous interface refinements."
+        ]
+      }
+    },
+    {
+      "version": "1.4.0",
+      "date": "2026-06-10",
+      "highlights": {
+        "de": [
+          "Neuer Home-Bereich — persönliche Startseite mit zuletzt verwendeten Berechnungen und Aufträgen, Favoriten, Schnellaktionen, Auftragsstatus-Übersicht, anstehenden Produktionen und Neuigkeiten. Ersetzt die bisherigen Start-Popups.",
+          "Auftragslänge im Auftrag — die insgesamt zu produzierende Geflechtslänge wird jetzt direkt im Auftrag erfasst. HerzogCAB berechnet daraus automatisch, wie viele Spulensätze gefahren werden müssen, die Gesamtlaufzeit und die Restlänge im letzten Satz. Maschinen mit mehreren Köpfen werden berücksichtigt (Abfrage, wie viele Köpfe den Auftrag fertigen).",
+          "Produktionsdaten im Ausdruck — Auftragsausdrucke enthalten jetzt eine Produktionstabelle mit Auftragslänge, Spulensätzen und Laufzeiten. Die Standard-Druckvorlagen aktualisieren sich beim ersten Start automatisch; selbst angepasste Vorlagen bleiben unverändert.",
+          "Auftrags-Editor übersichtlicher — Produktionsdaten in zwei Bereiche gegliedert (Produktionswerte / Hochrechnung auf die Auftragslänge); die Reiter Auftrag, Material, Spule und Produkt zeigen bei breitem Fenster zwei Spalten; flüssigeres Verhalten beim Ändern der Fenstergröße.",
+          "Alle Berechnungsseiten neu gestaltet — einheitliches, modernes Erscheinungsbild in der gesamten Anwendung; Pflichtfelder werden deutlich rot markiert; die Einheiten-Umrechner rechnen jetzt live während der Eingabe.",
+          "Hohlgeflecht überarbeitet — Beschriftungen und Design aktualisiert; neue grafische Schema-Darstellung des Geflechts.",
+          "Maschinenpark erweitert — Suchleiste, Filter nach Kategorie, Status, Geflechtsart und Standort, Sortierung; neues Feld 'Standort' je Maschine; Maschinenmaße (Länge/Breite) mit Berechnen-Button; spürbar schnellere Kartenansicht.",
+          "CSV-Import für Flechtmaschinen — Maschinen inklusive Bilder aus einer CSV-Datei importieren, mit Vorschau und Konfliktbehandlung; mehrere Maschinen gleichzeitig löschen (Strg+A / Strg-Klick).",
+          "Farbverwaltung neu — RAL Classic und Pantone Solid Coated integriert, Suche nach ähnlichen Farben per Hex-Wert, Referenzfarben pro Auftrag.",
+          "Designer verbessert — Speicherdialog mit Ordnerübersicht und Namensfeld; maximal zwei gleichzeitig geöffnete Designs; Fehler beim Laden gespeicherter Designs behoben.",
+          "Sprachwechsel ohne Neu-Anmeldung — nach einem Sprach- oder Profilwechsel startet HerzogCAB neu, ohne dass Sie sich erneut anmelden oder das Profil neu wählen müssen.",
+          "Vollständige Übersetzungen — alle Texte erscheinen jetzt in allen 6 Sprachen (DE/EN/ES/IT/PL/CN), einschließlich der Namen der Standard-Druckvorlagen und des Maschinen-Imports.",
+          "Fehlerbehebungen — Fachung aus dem Auftrag wird jetzt korrekt in die Berechnungen 'Materiallänge auf Spule' und 'Produktdurchmesser' übernommen; Umrechnungsfehler bei ST-Flechtern (französisch Zoll) behoben; Absturz in 'Benötigtes Material' behoben; diverse Übersetzungskorrekturen."
+        ],
+        "en": [
+          "New Home Area — personalised start page with recently used calculations and orders, favourites, quick actions, job-status overview, upcoming productions and news. Replaces the previous start-up popups.",
+          "Order Length — the total braid length to produce is now entered directly in the order. HerzogCAB automatically derives how many bobbin sets need to be run, the total runtime and the remaining length of the last set. Machines with multiple heads are supported (asks how many heads produce the order).",
+          "Production Data in Print — order printouts now include a production table with order length, bobbin sets and runtimes. The default print templates update automatically on first start; customised templates remain untouched.",
+          "Clearer Order Editor — production data grouped into two sections (production values / projection to order length); the Order, Material, Bobbin and Product tabs show two columns on wide windows; smoother window resizing.",
+          "All Calculation Pages Redesigned — consistent, modern look throughout the whole application; required fields are clearly highlighted in red; the unit converters now calculate live while typing.",
+          "Hollow Braid Reworked — updated labels and design; new graphical pattern diagram of the braid.",
+          "Machine Park Extended — search bar, filters by category, status, braid type and location, sorting; new 'Location' field per machine; machine dimensions (length/width) with calculate button; noticeably faster card view.",
+          "CSV Import for Braiding Machines — import machines including images from a CSV file, with preview and conflict handling; delete several machines at once (Ctrl+A / Ctrl-click).",
+          "Colour Management Reworked — RAL Classic and Pantone Solid Coated integrated, search for similar colours by hex value, reference colours per order.",
+          "Designer Improved — save dialog with folder overview and name field; a maximum of two designs open at the same time; fixed an error when loading saved designs.",
+          "Language Switch Without Re-Login — after changing the language or switching profiles, HerzogCAB restarts without asking you to log in or pick the profile again.",
+          "Complete Translations — all texts now appear in all 6 languages (DE/EN/ES/IT/PL/CN), including the names of the default print templates and the machine import.",
+          "Bugfixes — the ply count from the order is now correctly applied in the 'Material length on bobbin' and 'Product diameter' calculations; conversion error for ST braiders (French inch) fixed; crash in 'Required material' fixed; various translation corrections."
+        ]
+      }
+    },
+    {
+      "version": "1.3.6",
+      "date": "2026-05-26",
+      "highlights": {
+        "de": [
+          "Spulen-Stammdaten überarbeitet: Außen-, Kerndurchmesser und Wicklungslänge jetzt mit 1 Nachkommastelle in 0,1-mm-Schritten, Volumen mit 2 Nachkommastellen in 0,01-ccm-Schritten.",
+          "Spulen-Volumen wird beim Auswählen einer Spule jetzt automatisch aus den Maßen berechnet – auch für historische Spulen mit gerundeten oder Null-Werten in der Datenbank; manuelle Übersteuerung weiterhin möglich.",
+          "Neuer Berechnungs-Button im Spulen-Editor im Stil des Job-Editors (calculate_field_action) – berechnet das Volumen aus den eingegebenen Maßen auf Knopfdruck.",
+          "Spulen-Combobox-Auswahl bleibt bei Page-Wechsel und Popup-Show erhalten (Materiallänge auf Spule, Laufzeit & Spulensatz, Kern-Mantel-Seile) – analog zur bereits stabilen Material-Logik.",
+          "User-Profilleiste wird beim Einklappen der Seitenleiste jetzt komplett ausgeblendet, statt auf etwa 36 px gequetscht stehen zu bleiben."
+        ],
+        "en": [
+          "Bobbin master data reworked: outer/core diameter and winding length now use 1 decimal place in 0.1 mm steps; volume uses 2 decimal places in 0.01 ccm steps.",
+          "Bobbin volume is now auto-calculated from the dimensions when a bobbin is selected — including historical bobbins with rounded or zero values in the database; manual override still possible.",
+          "New calculate-field button in the bobbin editor in Job-Editor style (calculate_field_action) — computes the volume from the entered dimensions on demand.",
+          "Bobbin combobox selection now survives page changes and popup show events (Material length on bobbin, Running time & bobbin set, Core-cover ropes) — same logic as the already-stable material picker.",
+          "User profile bar is now fully hidden when the side navigation is collapsed, instead of remaining as a roughly 36 px stripe."
+        ]
+      }
+    },
+    {
+      "version": "1.3.5",
+      "date": "2026-05-07",
+      "highlights": {
+        "de": [
+          "Komplett neue Benutzer-, Rollen- und Profilverwaltung in einer eigenen Navigationsgruppe 'Systemverwaltung' – zentrale Speicherung unter ProgramData, mehrere Arbeitsplätze können sich eine Benutzerdatenbank zuverlässig teilen.",
+          "Login wird jetzt vor der Workspace-Auswahl abgefragt; Profilwechsel startet die Anwendung sauber neu.",
+          "Neue Firmendaten-Verwaltung mit Logo, Adresse, Steuer- und Handelsregisterdaten – direkt als {{company.*}}-Token in den Druckvorlagen verfügbar.",
+          "Granulare Rechte pro Modul: neue Berechtigungen 'Rollen verwalten', 'Firmendaten verwalten' und 'Parameter Explorer öffnen' können einzeln zugewiesen werden.",
+          "Druckvorlagen mit automatischem Seitenumbruch, Section-Titeln und einheitlichem Herzog-Tabellendesign; jede Vorlage in einer eigenen Datei.",
+          "Mausrad-Schutz in langen Formularen: Scrollen über Combobox oder Spinbox verstellt nicht mehr versehentlich Werte – der Dialog scrollt stattdessen.",
+          "52 fehlende chinesische Übersetzungen ergänzt; Toast-Meldung beim Speichern einer Rolle hinzugefügt und übersetzt."
+        ],
+        "en": [
+          "Brand-new user, role and profile administration in a dedicated 'System Administration' navigation group – central storage under ProgramData, multiple workstations can share one user database reliably.",
+          "Login is now requested before the workspace is selected; profile switching cleanly restarts the application.",
+          "New company-data module with logo, address, tax and commercial-register details – available directly as {{company.*}} tokens in print templates.",
+          "Granular per-module permissions: new rights for 'Manage roles', 'Manage company data' and 'Open Parameter Explorer' can be assigned individually.",
+          "Print templates with automatic pagination, section titles and unified Herzog table design; each template stored in its own file.",
+          "Mouse-wheel safety in long forms: scrolling over a combobox or spinbox no longer changes the value by accident – the dialog scrolls instead.",
+          "52 missing Chinese translations added; toast notification for role-save introduced and translated."
+        ]
+      }
+    },
+    {
+      "version": "1.3.4",
+      "date": "2026-04-20",
+      "highlights": {
+        "de": [
+          "Neuer Update-Dialog: Aktualisierungen werden direkt in der Anwendung angezeigt – inklusive Release Notes und Ein-Klick-Update über das Menü 'Updates'.",
+          "Installation läuft jetzt systemweit mit UAC-Abfrage: Herzog CAB erscheint in der Windows-Systemsteuerung unter Programme & Features, inklusive Desktop-Verknüpfung.",
+          "Deinstallation aus den Windows-Einstellungen funktioniert zuverlässig: das Wartungsprogramm wird jetzt mit Admin-Rechten gestartet und beendet sich nicht mehr stillschweigend.",
+          "Admin-Rechte werden nur noch bei der Erstinstallation angefordert; Maintenance- und Update-Läufe elevieren automatisch nur bei Bedarf.",
+          "Webserver und Hintergrund-Threads werden beim Update sauber beendet, damit das Wartungsprogramm die Dateien ersetzen kann.",
+          "Installer ist jetzt strikt offline und installiert immer die mitgelieferte Version, ohne unerwartet neuere Pakete vom Server nachzuladen.",
+          "Installer-Dateiname enthält jetzt automatisch die Version (z. B. HerzogCAB_Installer_1.3.4.exe)."
+        ],
+        "en": [
+          "New update dialog: updates are shown directly inside the application – including release notes and one-click update via the 'Updates' menu.",
+          "Installation now runs system-wide with a UAC prompt: Herzog CAB shows up in Windows Programs & Features, with a desktop shortcut.",
+          "Uninstall from Windows Settings works reliably: the maintenance tool is launched with admin rights and no longer exits silently.",
+          "Admin rights are now requested only on the initial install; maintenance and update runs elevate automatically only when needed.",
+          "Web server and background threads are now shut down cleanly during the update so the maintenance tool can replace the files.",
+          "The installer is now strictly offline and always installs the bundled version, without unexpectedly pulling newer packages from the server.",
+          "The installer file name now automatically includes the version (e.g. HerzogCAB_Installer_1.3.4.exe)."
+        ]
+      }
+    },
+    {
+      "version": "1.3.3",
+      "date": "2026-04-15",
+      "highlights": {
+        "de": [
+          "Erste Installer-Routine mit Qt Installer Framework: Herzog CAB wird jetzt über einen vollständigen Offline-Installer ausgeliefert.",
+          "Grundlage für das Auto-Update-System: Das mitgelieferte Maintenance-Tool kennt das RemoteRepository auf GitHub Pages und kann Updates nachziehen."
+        ],
+        "en": [
+          "First installer routine based on the Qt Installer Framework: Herzog CAB is now delivered via a full offline installer.",
+          "Foundation for the auto-update system: the bundled maintenance tool knows the remote repository on GitHub Pages and can pull updates."
+        ]
+      }
+    }
+  ]
+}
