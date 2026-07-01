@@ -11,13 +11,13 @@
   <SortingPriority>100</SortingPriority>
   <Default>script</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="66564618" OS="Any" UncompressedSize="194492191"/>
+  <UpdateFile CompressedSize="66573207" OS="Any" UncompressedSize="194492191"/>
   <DownloadableArchives>Herzog CAB.app.7z,content.7z</DownloadableArchives>
   <Licenses>
    <License file="license.txt" name="Herzog License Agreement"/>
   </Licenses>
-  <SHA1>f7ffcea06eac73f16b566efd94652f514453ccd1</SHA1>
+  <SHA1>e1f3903f40e41cf338273a1d2fad303c0707ae97</SHA1>
  </PackageUpdate>
- <SHA1>3a584535c2371408d97d5bbb076d684a39193235</SHA1>
- <MetadataName>2026-07-01-1247_meta.7z</MetadataName>
+ <SHA1>fa89847211b9d073acf1f15a05c9235d62121be7</SHA1>
+ <MetadataName>2026-07-01-1341_meta.7z</MetadataName>
 </Updates>
