@@ -11,7 +11,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br><br>
   <img src="https://img.shields.io/badge/version-1.4.4-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
-  <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey" alt="Platform">
 </div>
 
 ---
