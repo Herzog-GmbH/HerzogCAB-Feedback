@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.4.3-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-1.4.4-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -92,6 +92,22 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 1.4.4 — Released June 2026
+
+### New
+
+- **Sign-in methods** — in addition to local user management, Herzog CAB now supports signing in via **Microsoft Entra ID** (Azure AD) and via **LDAP / Active Directory**. Users and groups can be imported from the directory and roles assigned automatically based on group membership.
+
+### Improvements
+
+- **Calculation fields** — fields that show a dash as a placeholder can now be edited directly on click; decimal places are applied correctly.
+
+### Fixes
+
+- **Window focus** — the main window and the 3D hall-view dialog now reliably come to the foreground after startup / when opened.
 
 ---
 
@@ -328,7 +344,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.4.3
+## Latest Version: 1.4.4
 
 ---
 

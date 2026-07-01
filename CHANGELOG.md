@@ -4,6 +4,28 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.4.4 — 2026-06-30
+
+### New
+
+- **Sign-in methods** — in addition to local user management, Herzog CAB now
+  supports signing in via **Microsoft Entra ID** (Azure AD) and via
+  **LDAP / Active Directory**. Users and groups can be imported from the
+  directory and roles assigned automatically based on group membership.
+
+### Improvements
+
+- **Calculation fields** — fields that show a dash (`–`) as a placeholder can
+  now be edited directly on click; decimal places are applied correctly.
+
+### Fixes
+
+- **Window focus** — the main window (and the 3D hall-view dialog) now reliably
+  come to the foreground after startup / when opened, instead of staying behind
+  other windows.
+
+---
+
 ## HerzogCAB 1.4.3 — 2026-06-24
 
 ### Fixes
