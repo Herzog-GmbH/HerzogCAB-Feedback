@@ -2,6 +2,22 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.4.4",
+      "date": "2026-06-30",
+      "highlights": {
+        "de": [
+          "Neue Anmeldemethoden — zusätzlich zur lokalen Benutzerverwaltung kann sich Herzog CAB jetzt über Microsoft Entra ID (Azure AD) und über LDAP/Active Directory anmelden. Benutzer und Gruppen lassen sich aus dem Verzeichnis übernehmen und Rollen automatisch anhand der Gruppenzugehörigkeit zuweisen.",
+          "Berechnungsfelder — Felder, die als Platzhalter einen Bindestrich anzeigen, lassen sich jetzt direkt beim Anklicken bearbeiten; Dezimalstellen werden dabei korrekt übernommen.",
+          "Behoben: Das Hauptfenster und der 3D-Hallenansicht-Dialog kommen nach dem Start bzw. beim Öffnen zuverlässig in den Vordergrund."
+        ],
+        "en": [
+          "New sign-in methods — in addition to local user management, Herzog CAB can now sign in via Microsoft Entra ID (Azure AD) and via LDAP/Active Directory. Users and groups can be imported from the directory and roles assigned automatically based on group membership.",
+          "Calculation fields — fields that show a dash as a placeholder can now be edited directly on click; decimal places are applied correctly.",
+          "Fixed: the main window and the 3D hall-view dialog reliably come to the foreground after startup or when opened."
+        ]
+      }
+    },
+    {
       "version": "1.4.3",
       "date": "2026-06-24",
       "highlights": {
