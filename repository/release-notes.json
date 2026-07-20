@@ -2,6 +2,34 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.4.5",
+      "date": "2026-07-20",
+      "highlights": {
+        "de": [
+          "Spulerei — Herzog CAB deckt jetzt auch die Spulerei ab. Spulmaschinen werden mit eigenen Stammdaten und einem eigenen Dialog verwaltet, Spulaufträge gibt es als eigene Auftragsart mit Farbaufschlüsselung und Klöppeltabelle, und sieben neue Spulerei-Berechnungen stehen in einer eigenen Gruppe bereit. Spul- und Flechtaufträge lassen sich miteinander verknüpfen, und der Hallenplaner unterscheidet Flecht- und Spulmaschinen.",
+          "Spulzeit und Maschinenverteilung — der Spulauftrag rechnet die Spulzeit hoch, zeigt den Produktionszeitraum von–bis und verteilt die Spulen auf mehrere Maschinen; ein Knopf verteilt sie gleichmäßig nach Spulstellen. Der Auftragseditor ist auf drei übersichtliche Karten zusammengefasst, die Farbaufschlüsselung ist frei editierbar und ein Rechner ermittelt die Zielspulenzahl.",
+          "Neue Geflechtsarten im Designer — Quadratgeflecht (8er bis 36er, normal, halb und Tandem), Spiralflechter (12er und 20er), Packungsflechter in allen Baugrößen mit Familienauswahl (2-, 3-, 4-bahnig und rund) sowie Soutachegeflecht. Alle Flechtbilder sind aus der Maschinenkinematik hergeleitet.",
+          "Gangbahn-Animation — der Designer zeigt den Klöppellauf als Animation, für alle Geflechtsarten, mit einstellbarem Tempo und synchronem Aufbau des Flechtbilds.",
+          "Vorschau und Ansichten — die Vorschau nennt Material-, Bedeckungs- und Geflechtsdurchmesser direkt in der Titelzeile. Voll-, Halb- und 3D-Ansicht sind als Schalter in der Werkzeugleiste erreichbar; Rund-, Quadrat- und Packungsgeflechte haben überarbeitete 3D-Ansichten.",
+          "Bedienung im Designer — Geflechtsart und Bindung sind jetzt Auswahllisten, die Design-Karte ist kompakt und scrollbar, und neun Designer-Vorgaben (Ansicht, Animation, Speichern) liegen in den Einstellungen.",
+          "Druck-Editor — die Besetzungstabelle kann eine Spalte je Bahn ausgeben, der Zellstil ist zwischen Farbfläche und Farbfeld umschaltbar, und die Datentabellen sind nach Allgemein, Flechterei und Spulerei unterteilt. Spulaufträge lassen sich drucken.",
+          "Webansicht — die Maschinenübersicht hat eine Filterleiste mit Suche, Typ-Gruppierung und Auftrags-Badges; Spulaufträge werden mit Farbaufschlüsselung und Verteiltabelle angezeigt.",
+          "Weitere Verbesserungen — Speicherort-Verwaltung in der Systemverwaltung, Feinheit-Ergebnis umschaltbar zwischen tex, dtex, den, Nm und Ne, Designer-Farbpalette ohne 20-Farben-Grenze, Entra-Anmeldung im eigenen Fenster mit automatischem Schließen, vereinheitlichte Maschinen-Dialoge und ein scrollbarer Einstellungen-Dialog."
+        ],
+        "en": [
+          "Winding — Herzog CAB now covers the winding shop as well. Winding machines have their own master data and dialog, winding orders are a separate order type with colour breakdown and carrier table, and seven new winding calculations are available in their own group. Winding and braiding orders can be linked, and the hall planner distinguishes braiding from winding machines.",
+          "Winding time and machine distribution — the winding order projects the winding time, shows the production period from–to and distributes the bobbins across several machines; one button spreads them evenly by winding position. The order editor is condensed into three clear cards, the colour breakdown is freely editable, and a calculator determines the target bobbin count.",
+          "New braid types in the designer — square braid (8 up to 36 carriers, full, half and tandem), spiral braiders (12 and 20 carriers), packing braiders in all sizes with family selection (2-, 3-, 4-track and round), plus soutache braid. Every braid pattern is derived from the machine kinematics.",
+          "Carrier track animation — the designer shows the carrier movement as an animation, for all braid types, with adjustable speed and the braid pattern building up in sync.",
+          "Preview and views — the preview states material, coverage and braid diameter directly in the title line. Full, half and 3D views are available as toolbar toggles; round, square and packing braids have reworked 3D views.",
+          "Designer handling — braid type and binding are now drop-down lists, the design card is compact and scrollable, and nine designer defaults (view, animation, saving) are available in the settings.",
+          "Print editor — the carrier table can output one column per track, the cell style switches between colour fill and colour swatch, and the data tables are grouped into General, Braiding and Winding. Winding orders can be printed.",
+          "Web view — the machine overview has a filter bar with search, type grouping and order badges; winding orders are shown with colour breakdown and distribution table.",
+          "Further improvements — storage location management in system administration, linear density result switchable between tex, dtex, den, Nm and Ne, designer colour palette without the 20-colour limit, Entra sign-in in its own window with automatic close, unified machine dialogs and a scrollable settings dialog."
+        ]
+      }
+    },
+    {
       "version": "1.4.4",
       "date": "2026-06-30",
       "highlights": {
