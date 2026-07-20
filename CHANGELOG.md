@@ -4,6 +4,63 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.4.5 — 2026-07-20
+
+### New
+
+- **Winding shop** — Herzog CAB now covers winding as well. Winding machines
+  have their own master data and dialog, **winding orders** are a separate
+  order type with colour breakdown and carrier table, and seven winding
+  calculations are available in their own group. Winding and braiding orders
+  can be linked, and the hall planner distinguishes both machine types.
+- **Winding time and machine distribution** — the winding order projects the
+  winding time, shows the production period from–to and distributes the
+  bobbins across several machines; one button spreads them evenly by winding
+  position. A calculator determines the target bobbin count from the required
+  total length.
+- **New braid types in the designer** — square braid (8 up to 36 carriers,
+  full, half and tandem), spiral braiders (12 and 20 carriers), packing
+  braiders in all sizes with family selection (2-, 3-, 4-track and round),
+  plus soutache braid. Every braid pattern is derived from the machine
+  kinematics.
+- **Carrier track animation** — the designer shows the carrier movement as an
+  animation for all braid types, with adjustable speed and the braid pattern
+  building up in sync.
+- **Storage location management** — data storage locations can be managed in
+  system administration.
+
+### Improvements
+
+- **Preview and views** — the preview states material, coverage and braid
+  diameter directly in the title line. Full, half and 3D views are available
+  as toolbar toggles; round, square and packing braids have reworked 3D views.
+- **Designer handling** — braid type and binding are now drop-down lists, the
+  design card is compact and scrollable, and nine designer defaults (view,
+  animation, saving) are available in the settings. The colour palette is no
+  longer limited to 20 colours.
+- **Print editor** — the carrier table can output one column per track, the
+  cell style switches between colour fill and colour swatch, and the data
+  tables are grouped into General, Braiding and Winding. Winding orders can be
+  printed.
+- **Web view** — the machine overview has a filter bar with search, type
+  grouping and order badges; winding orders are shown with colour breakdown
+  and distribution table.
+- **Linear density** — the result can be switched between tex, dtex, den, Nm
+  and Ne.
+- **Machine dialogs** — field heights and labels unified, year of manufacture
+  as a range, double-click opens editing directly. The settings dialog is
+  scrollable and adapts to the screen height.
+
+### Fixes
+
+- **Entra sign-in** — now opens in its own window and closes automatically
+  after signing in.
+- **Designer** — saving and printing while an animation is running no longer
+  produces an empty preview image; colouring and the side panel keep working
+  after closing a preview pane.
+
+---
+
 ## HerzogCAB 1.4.4 — 2026-06-30
 
 ### New
