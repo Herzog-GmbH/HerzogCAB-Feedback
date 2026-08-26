@@ -4,6 +4,31 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 1.4.6 — 2026-08-25
+
+### New
+
+- **Braiding angle from take-up** — a new calculation links machine setting and
+  braid. Horngear speed and take-up give the braiding angle; the take-up can be
+  entered either as a speed or through takeoff disc diameter and speed. The
+  other way round, the page derives the take-up speed, horngear speed and disc
+  speed required for a target braiding angle. For round and lace braids.
+- **Favourites on the calculation tiles** — the star now sits on every
+  calculation card, styled the same everywhere, so favourites can be set and
+  removed without a detour.
+
+### Fixes
+
+- **Roles keep their permissions** — saving a role used to discard exactly
+  those permissions the editor was not showing at the time.
+- **Blocked areas stay hidden** — a favourite pointing at a blocked area stayed
+  visible, and the collapsed toolbar showed icons for areas that navigation had
+  long since hidden.
+- **Update check per platform** — Windows and macOS query their own update
+  channel again.
+
+---
+
 ## HerzogCAB 1.4.5 — 2026-07-20
 
 ### New
