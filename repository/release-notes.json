@@ -2,6 +2,26 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "1.4.6",
+      "date": "2026-08-25",
+      "highlights": {
+        "de": [
+          "Flechtwinkel über Abzug — eine neue Berechnung verbindet Maschineneinstellung und Geflecht. Aus Flügelraddrehzahl und Abzug ergibt sich der Flechtwinkel; der Abzug lässt sich wahlweise als Geschwindigkeit oder über Durchmesser und Drehzahl der Abzugsscheibe vorgeben. Umgekehrt rechnet die Seite aus einem Soll-Flechtwinkel zurück, welche Abzugsgeschwindigkeit, Flügelraddrehzahl und Scheibendrehzahl dafür nötig sind. Für Rund- und Litzengeflecht.",
+          "Favoriten direkt auf den Rechen-Kacheln — der Stern sitzt jetzt auf jeder Rechenkarte, überall gleich gestaltet. Favoriten lassen sich damit ohne Umweg setzen und wieder entfernen.",
+          "Rollen verlieren keine Rechte mehr — beim Speichern einer Rolle gingen bisher genau die Rechte verloren, die der Editor gerade nicht anzeigte.",
+          "Gründlicheres Ausblenden gesperrter Bereiche — ein Favorit auf einen gesperrten Bereich blieb sichtbar, und die eingeklappte Symbolleiste zeigte Symbole für Bereiche, die in der Navigation längst ausgeblendet waren.",
+          "Update-Prüfung je Plattform — Windows und macOS fragen wieder ihren eigenen Update-Kanal ab."
+        ],
+        "en": [
+          "Braiding angle from take-up — a new calculation links machine setting and braid. Horngear speed and take-up give the braiding angle; the take-up can be entered either as a speed or through takeoff disc diameter and speed. The other way round, the page derives the take-up speed, horngear speed and disc speed required for a target braiding angle. For round and lace braids.",
+          "Favourites directly on the calculation tiles — the star now sits on every calculation card, styled the same everywhere, so favourites can be set and removed without a detour.",
+          "Roles no longer lose permissions — saving a role used to discard exactly those permissions the editor was not showing at the time.",
+          "Blocked areas are hidden more thoroughly — a favourite pointing at a blocked area stayed visible, and the collapsed toolbar showed icons for areas that navigation had long since hidden.",
+          "Update check per platform — Windows and macOS query their own update channel again."
+        ]
+      }
+    },
+    {
       "version": "1.4.5",
       "date": "2026-07-20",
       "highlights": {
