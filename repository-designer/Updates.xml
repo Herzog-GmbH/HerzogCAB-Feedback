@@ -1,0 +1,24 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>com.herzog.herzogcab.designer</Name>
+  <DisplayName>Herzog CAB Designer</DisplayName>
+  <Description>Install Herzog CAB Program.</Description>
+  <Version>1.4.6</Version>
+  <ReleaseDate>2026-08-26</ReleaseDate>
+  <SortingPriority>100</SortingPriority>
+  <Default>script</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="46135429" OS="Any" UncompressedSize="109152227"/>
+  <DownloadableArchives>generic.7z,iconengines.7z,imageformats.7z,networkinformation.7z,platforms.7z,styles.7z,tls.7z,translations.7z,content.7z</DownloadableArchives>
+  <UserInterfaces>page.ui</UserInterfaces>
+  <Licenses>
+   <License file="license.txt" name="Herzog License Agreement"/>
+  </Licenses>
+  <SHA1>37e7bb7faee1eef6066a7506df4eeeb93fea6b81</SHA1>
+ </PackageUpdate>
+ <SHA1>0572a612f04123770c075c6394a2a185064e1558</SHA1>
+ <MetadataName>2026-08-26-1332_meta.7z</MetadataName>
+</Updates>
