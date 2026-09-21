@@ -4,6 +4,49 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 2.0.0 — 2026-09-22
+
+### New
+
+- **Online licence through a customer account** — Herzog CAB can be installed on
+  any computer. On start-up it signs in to the company account and draws its
+  licence from that pool. One seat per module and computer; a released or
+  no-longer-started computer returns its seat to the pool on its own.
+- **One login for desktop and web** — the program user is the user of the
+  customer account. Users, roles and permissions are maintained once in the
+  licence portal and apply in the program and in Herzog CAB Web, optionally
+  with a code from an authenticator app. *Forgot password?* leads from the
+  sign-in dialog to the portal.
+- **Herzog CAB Web** — jobs, winding jobs, the designer with 2D and 3D view,
+  master data, machine park, floor plans, print templates and calculators in the
+  browser at app.herzog-cab.com, also on tablet or phone. Module
+  *Herzog CAB Web* in the account.
+- **Cloud sync** — the working directory is synced with Herzog CAB Web on
+  request: saved items go up, items changed or uploaded in the web app come
+  back. If both sides change the same item, the desktop wins. An account has
+  exactly one working directory in the cloud; the settings show which one.
+- **Designer in 3D** — one view group with full, half, cylinder and 3D; rotate
+  and zoom the braid, tape width, coverage and viewing angle as sliders in the
+  preview's gear menu, material diameter shown as a scale.
+- **Work offline** — after signing in the program runs without a network:
+  normally up to seven days, renewed silently on every start, and up to 30 days
+  on request via *Work offline*.
+- **Licence portal** — modules and occupied seats, releasing seats, inviting
+  colleagues, roles, requesting additional licences or a renewal, downloading
+  the latest version; reminders by e-mail 30 and 7 days before a term ends.
+- **"Licence" section in the settings** — account, signed-in user, modules,
+  term and time remaining, with *Renew now*, *Work offline*, *Sign out* and
+  the cloud sync.
+
+### Compatibility
+
+- **Existing dongle and CmAct customers change nothing** — the dongle stays
+  valid and the existing licence is recognised as before. The account model only
+  steps in when no CodeMeter container is present; the program starts even
+  without CodeMeter software installed.
+
+---
+
 ## HerzogCAB 1.4.6 — 2026-08-25
 
 ### New

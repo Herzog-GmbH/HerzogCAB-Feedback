@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-1.4.6-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-2.0.0-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -92,6 +92,25 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 2.0.0 — Released September 2026
+
+### New
+
+- **Online licence through a customer account** — Herzog CAB can now be installed on any computer. On start-up the program signs in to your company account and draws its licence from that pool. A computer takes one seat per module; when it releases the seat or is no longer started, the seat returns to the pool on its own.
+- **One login for desktop and web** — the program user is the user of the customer account. Users, roles and permissions are maintained once in the licence portal and apply in the program and in Herzog CAB Web, optionally with a code from an authenticator app. *Forgot password?* leads from the sign-in dialog to the portal.
+- **Herzog CAB Web** — jobs, winding jobs, the designer with 2D and 3D view, master data, machine park, floor plans, print templates and calculators in the browser at app.herzog-cab.com, also on tablet or phone. Module *Herzog CAB Web* in the account.
+- **Cloud sync** — the working directory is synced with Herzog CAB Web on request: saved items go up, items changed or uploaded in the web app come back. If both sides change the same item, the desktop wins. An account has exactly one working directory in the cloud; the settings show which one.
+- **Designer in 3D** — one view group with full, half, cylinder and 3D; rotate and zoom the braid, tape width, coverage and viewing angle as sliders in the preview's gear menu, material diameter shown as a scale.
+- **Work offline** — once signed in, the program keeps running without a network: normally up to seven days, renewed silently on every start, and up to 30 days on request via *Work offline*.
+- **Licence portal** — see your modules and occupied seats, release seats, invite colleagues, assign roles, request additional licences or a renewal, and download the latest version; reminders by e-mail 30 and 7 days before a term ends.
+- **New "Licence" section in the settings** — account, signed-in user, unlocked modules, term and time remaining, with *Renew now*, *Work offline*, *Sign out*, the cloud sync and the link to the portal.
+
+### Compatibility
+
+- **Existing dongle and CmAct customers change nothing** — the dongle stays valid and the existing licence is recognised exactly as before. The account model only steps in when no CodeMeter container is present; the program starts even without CodeMeter software installed.
 
 ---
 
@@ -385,7 +404,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 1.4.6
+## Latest Version: 2.0.0
 
 ---
 
