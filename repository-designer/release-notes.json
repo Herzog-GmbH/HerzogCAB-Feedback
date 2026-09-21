@@ -2,6 +2,34 @@
   "_comment": "Release Notes fuer den In-App Update-Dialog. Wird von Create.cmd/Publish.cmd nach repository/release-notes.json kopiert und von GitHub Pages ausgeliefert. Struktur: versions-Array absteigend sortiert (neueste zuerst). highlights-Objekt enthaelt ausschliesslich 'de' und 'en' -- die UI-Uebersetzungen (Buttons, Fehlermeldungen) sind davon unabhaengig und decken alle sechs Sprachen ab. Fallback-Reihenfolge in der App: gewuenschte Sprache (de) -> en -> de. Fuer alle anderen UI-Sprachen (pl/it/es/cn) zieht automatisch die englische Variante.",
   "versions": [
     {
+      "version": "2.0.0",
+      "date": "2026-09-22",
+      "highlights": {
+        "de": [
+          "Online-Lizenz über ein Kundenkonto – Herzog CAB lässt sich jetzt auf einem beliebigen Rechner installieren. Beim Start meldet sich das Programm am Konto Ihrer Firma an und zieht die Lizenz aus deren Vorrat. Ein Rechner belegt je Baustein einen Platz; gibt ein Rechner den Platz frei oder wird er nicht mehr gestartet, fällt der Platz von selbst zurück in den Vorrat.",
+          "Ein Login für Desktop und Web – der Benutzer, der sich im Programm anmeldet, ist der Benutzer des Kundenkontos. Benutzer, Rollen und Rechte werden einmal im Lizenzportal gepflegt und gelten im Programm wie in Herzog CAB Web; auf Wunsch mit Bestätigungscode aus der Authenticator-App. „Passwort vergessen?“ führt aus dem Anmeldedialog direkt zum Portal.",
+          "Herzog CAB Web – Aufträge, Spulaufträge, Designer mit 2D- und 3D-Ansicht, Stammdaten, Maschinenpark, Hallenpläne, Druckvorlagen und Rechner im Browser unter app.herzog-cab.com, auch am Tablet oder Handy. Baustein „Herzog CAB Web“ im Konto; das Konto entscheidet, wer was sieht.",
+          "Cloud-Abgleich – das Arbeitsverzeichnis wird auf Wunsch automatisch mit Herzog CAB Web abgeglichen: Gespeichertes geht hoch, was in der Webapp geändert oder hochgeladen wird, kommt zurück ins Arbeitsverzeichnis. Ändern beide Seiten dasselbe, hat der Desktop recht. Ein Konto hat genau ein Arbeitsverzeichnis in der Cloud; die Einstellungen zeigen, welches.",
+          "Designer in 3D – eine Ansichtsgruppe Voll, Halb, Zylinder und 3D; das Geflecht lässt sich drehen und zoomen, Bandbreite, Bedeckung und Blickwinkel stehen als Regler im Zahnrad der Vorschau, der Materialdurchmesser wird als Maßstab sichtbar.",
+          "Offline arbeiten – nach der Anmeldung läuft das Programm ohne Netz weiter. Im Normalfall bis zu sieben Tage, die sich bei jedem Start still verlängern; auf Wunsch bis zu 30 Tage über „Offline arbeiten“.",
+          "Neuer Bereich „Lizenz“ in den Einstellungen – zeigt Konto, angemeldeten Benutzer, freigeschaltete Bausteine, Laufzeit und Restzeit, mit „Jetzt verlängern“, „Offline arbeiten“, „Abmelden“, dem Cloud-Abgleich und dem Weg ins Lizenzportal.",
+          "Lizenzportal – im Portal sehen Sie Ihre Bausteine und belegten Plätze, geben Plätze frei, laden Kollegen zum Konto ein, vergeben Rollen, fordern zusätzliche Lizenzen oder eine Verlängerung an und laden die neueste Version herunter. Erinnerungen 30 und 7 Tage vor Ablauf kommen per E-Mail.",
+          "Bestandskunden mit Dongle oder CmAct-Lizenz ändern nichts – der Dongle gilt unverändert weiter, die vorhandene Lizenz wird wie bisher erkannt. Das Kontomodell greift nur, wenn kein Container vorhanden ist; ohne installierte CodeMeter-Software startet das Programm trotzdem."
+        ],
+        "en": [
+          "Online licence through a customer account – Herzog CAB can now be installed on any computer. On start-up the program signs in to your company account and draws its licence from that pool. A computer takes one seat per module; when a computer releases its seat or is no longer started, the seat returns to the pool on its own.",
+          "One login for desktop and web – the user who signs in to the program is the user of the customer account. Users, roles and permissions are maintained once in the licence portal and apply in the program as well as in Herzog CAB Web; optionally with a code from your authenticator app. “Forgot password?” takes you from the sign-in dialog straight to the portal.",
+          "Herzog CAB Web – jobs, winding jobs, the designer with 2D and 3D view, master data, machine park, floor plans, print templates and calculators in the browser at app.herzog-cab.com, on a tablet or phone as well. Module “Herzog CAB Web” in the account; the account decides who sees what.",
+          "Cloud sync – on request the working directory is synced automatically with Herzog CAB Web: what you save goes up, what is changed or uploaded in the web app comes back into the working directory. If both sides change the same item, the desktop wins. An account has exactly one working directory in the cloud; the settings show which one.",
+          "Designer in 3D – one view group with full, half, cylinder and 3D; the braid can be rotated and zoomed, tape width, coverage and viewing angle are sliders in the preview’s gear menu, and the material diameter is shown as a scale.",
+          "Work offline – once signed in, the program keeps running without a network. Normally for up to seven days, renewed silently on every start; on request up to 30 days via “Work offline”.",
+          "New “Licence” section in the settings – shows the account, the signed-in user, unlocked modules, term and time remaining, with “Renew now”, “Work offline”, “Sign out”, the cloud sync and the link to the licence portal.",
+          "Licence portal – the portal shows your modules and occupied seats, lets you release seats, invite colleagues to the account, assign roles, request additional licences or a renewal, and download the latest version. Reminders arrive by e-mail 30 and 7 days before a term ends.",
+          "Existing dongle or CmAct customers change nothing – the dongle stays valid, the existing licence is recognised as before. The account model only steps in when no container is present; without CodeMeter software installed the program still starts."
+        ]
+      }
+    },
+    {
       "version": "1.4.6",
       "date": "2026-08-25",
       "highlights": {
