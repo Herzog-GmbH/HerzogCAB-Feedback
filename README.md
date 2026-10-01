@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-2.0.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-2.1.0-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -92,6 +92,28 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 2.1.0 — Released October 2026
+
+### New
+
+- **Floating licences** — the program and Herzog CAB Web share the seats of the account. Every computer running Herzog CAB takes one seat and frees it as soon as the program closes (after a crash within 15 minutes at the latest). Working in Herzog CAB Web also takes a seat, until 15 minutes after the last activity. Working in the program and the browser at the same time therefore takes two seats. When all seats are taken, Herzog CAB shows who is working; the licence tab shows how many seats are in use.
+- **Stay signed in** — the sign-in dialog has a “Stay signed in” box, ticked by default. Herzog CAB then starts on this computer without signing in again, with no password and no confirmation code. No password is stored for this, only an encrypted key for this user on this computer; it expires 30 days after it was last used. Signing out in the program, a new password or blocking the computer in the licence portal ends it.
+- **Company storage location** — the customer account remembers the folder on your file server where your company works with Herzog CAB. After signing in, a new computer shows that folder and connects with one click; nobody needs to know the network path, and customer accounts no longer see the dialog asking where to store the user data. The first computer of a company chooses once between “this computer only” and a network drive. *System administration → Storage location* moves a local working directory to a network drive: it is copied and checked, the old folder stays as a backup. Administrators can also set the location in Herzog CAB Web under *Account and users*; the licence portal shows it above the list of computers.
+- **One seat pool, shown as one** — a subscription covers the program and Herzog CAB Web together. The licence tab shows “Full version (program and web)”, and Herzog CAB Web names the edition instead of showing “web”.
+- **Take-up winders as their own machine kind** — take-up winders stand behind the braiding machine and wind the finished product onto a drum or a reel. They are now handled like braiding and bobbin winding machines: their own master data page, their own dialog with drum dimensions, load capacity, tension control, image and documents, plus their own filter in the machine park and their own group in the hall plan. Series AW, AWS, AWST, AWSP, AWSA and AWH.
+- **Pay-offs as their own machine kind** — pay-offs feed material such as a core, a rope or a cable from a drum into the following machine. They are handled like take-up winders: their own master data page, their own dialog with drum dimensions, load capacity, drum lift and unwinding tension (brake, dancer arm, pulley dancer), image and documents, plus their own filter in the machine park and their own group in the hall plan. Series AB, ABS, ABST and ABA.
+- **Creels as their own machine kind** — pay-off creels and pay-off racks feed yarns, monofilaments, wires or core material into a bobbin winding or braiding machine. Their own master data page and dialog with pay-off positions (total and active), pay-off (overhead or rolling), drive, package type and size, thread tension, monitoring and material, plus their own filter in the machine park and their own group in the hall plan. Series GU, GR, GRP, GRG, GM, GMG, GS, EGA, VG and AL.
+- **Drum database** — drums can be created once and reused in calculations instead of being typed in every time. Herzog drums and reels come from the Herzog catalogue; your own are added alongside, just as with bobbins. The winding volume is derived from winding diameter, core diameter and traverse width and stays editable. The page “Product length per drum” now picks the drum from the database instead of asking for three dimensions.
+- **Drum and take-up winder selection** — a new calculation leads from the carrier setup to the take-up winder: bobbin, material, fineness, ply count, number of carriers and braiding angle give product length and weight as in the other calculations, the product diameter gives the space required, from which the page suggests a drum from the drum database and the take-up winders that accept its dimensions, the product diameter and the weight — from your own machine fleet or the Herzog catalogue. If everything does not fit on one drum, it is split: equal portions, full drums plus remainder, or the remainder on a smaller drum. Filling grade and clearance below the flange edge are adjustable. If a figure such as a drum's empty weight is missing, the calculation says “cannot be checked” instead of silently “fits”. If the product has a core, like a core-cover rope, the core is added to the weight from its share of the cross-section, its material and its filling grade, as on the page “Core-Cover Product”.
+- **Product weight counts the ply count** — the calculation “Product weight” has a field “Ply count”; as on every other page, the fineness applies to a single thread. Until now plied yarns came out too light, also in the order, which now takes the ply count from the Material tab.
+- **Take-up winder and drum in the order** — the braiding order has a new tab “Take-up”: the take-up winder from the machine fleet and the drum from the drum database are saved with the order. The order length is split per head across the drums (equal portions, full drums plus remainder, or remainder on a smaller drum); if the customer specifies a delivery length per drum, that length is used. Capacity, number of drums, heaviest drum and the check against the take-up winder (drum dimensions, product diameter, load capacity) appear right next to it. A button “Calculate suggestion” finds a matching take-up winder and drum. The data appears in the overview, in the web view and as placeholders in the print templates. For core-cover ropes the core can be entered in the tab; as on the page “Core-Cover Product” it counts towards the weight per metre, and thus the load capacity, and towards the total weight projected in the “Production” tab.
+- **Design from the order** — every save in an order's “New design” or “Open design” window now links the design to the order, even if the window is then left with “Close”. Until now the design was saved but not linked to the order. Without saving, the order stays unchanged.
+- **Print templates from Herzog CAB Web** — templates created or changed in the Print Editor of Herzog CAB Web now also come back into the program; until now they only went from the program to the web. Deleting the customised version of a standard print template in the web brings back the bundled one in the program.
+- **Herzog catalogue** — the new item “Catalogue” right below the machine fleet lists the Herzog machines with their technical data: braiding and bobbin winding machines, take-up winders, pay-offs and creels, plus carrier bobbins with article numbers, drums and reels. One tab per kind, with search and series fixed at the top, shown as tiles or a list. One click shows the details; there you pick take-up, setup and accessories and create the machine as your own straight away, with machine group, serial number and name. Image, pitch and technical data come from the catalogue, for braiding machines optionally the matching bobbin as well. The accessories then appear in every machine dialog of the master data, where you can change them and add your own, for braiding machines the take-up too. Bobbins and drums go into your master data with one click, also via “From Herzog catalogue …” in Bobbins and Drums. New workspaces therefore start without bundled bobbins and drums; existing ones stay unchanged. Machines without an image get it in their edit dialog via “Use catalogue image”.
+- **Machine pages open faster** — braiding machines, bobbin winding machines and take-up winders build their cards only when they scroll into view instead of all at once on opening. With many machines, the long wait is gone.
 
 ---
 
@@ -404,7 +426,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 2.0.0
+## Latest Version: 2.1.0
 
 ---
 
