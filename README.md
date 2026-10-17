@@ -9,7 +9,7 @@ Braiding design and calculation software for Herzog braiding machines.
   <br>
   <sub>▶ Click to watch the HerzogCAB product overview on YouTube</sub>
   <br><br>
-  <img src="https://img.shields.io/badge/version-2.1.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/version-2.1.1-blue" alt="Version">
   <img src="https://img.shields.io/badge/status-active-green" alt="Status">
   <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Platform">
 </div>
@@ -52,12 +52,19 @@ HerzogCAB is the all-in-one design, calculation and production-management softwa
 
 - Built-in web server for tablets or monitors mounted at the braiding machine
 - Live occupation preview, stocking table, order view and machine documents — accessible from any browser on the local network
-- Password protection with session management
+- Password protection with session management; without a password the web server is only reachable on its own computer
+
+**Braiding Simulator (additional module)**
+
+- Herzog machines in motion: set up carriers, program the switches on a timeline, check for collisions and output the switching plan for the control
+- Take-up set by one value (take-up speed, lay length, braiding angle or PPI), machines with several braiding heads, 3D view of the loaded machine
+- Visible with a model licence assigned to the user in the licence portal
 
 **Updates & Distribution**
 
 - System-wide Windows installer with `Programs & Features` integration, Start menu and desktop shortcut
 - In-app update dialog with one-click updates and release notes shown directly inside the application
+- F1 opens the matching page of the online manual
 - Full translations in 6 languages: 🇩🇪 🇬🇧 🇪🇸 🇮🇹 🇵🇱 🇨🇳
 
 The project is actively developed and continuously improved.
@@ -92,6 +99,34 @@ Have an idea for improving HerzogCAB? Create a **Feature Request** issue and des
 ---
 
 ## Development Roadmap
+
+---
+
+## ✅ Version 2.1.1 — Released October 2026
+
+### Important
+
+- **Update all computers at once** — if several computers work with the same shared working directory, please update all of them to 2.1.1 at the same time. Version 2.1.1 saves entries one by one, with a version stamp and an edit lock; older versions on the same folder do not know this and can overwrite other people's changes.
+- **Web server without a password only on this computer** — without a password, the built-in web server for tablets and screens at the machine can now only be reached on its own computer. For access from the network, set a password under *Settings → Web Server*; users then sign in in the browser. The password is no longer stored in plain text, and after five failed attempts sign-in is blocked for a few minutes.
+
+### New
+
+- **Network licences count seats again** — with a CodeMeter network licence, Herzog CAB takes a seat for as long as the program runs and frees it on exit. When all seats are taken, Herzog CAB says so right at start-up.
+- **User sync with the customer account** — on start-up Herzog CAB fetches the account's users in the background if the signed-in user may manage users. New colleagues appear in user management right away; users deleted in the account can no longer get into the program, not even offline.
+- **Sign in again instead of a dead end** — if a computer was signed out in the licence portal, the password was changed or the user was deleted, Herzog CAB asks for a new sign-in at the next start (“Herzog CAB needs to be activated again on this computer”) instead of stopping at “not yet activated”. With less than a day left, the licence tab shows the remaining hours; without a connection the program keeps working for up to 24 hours.
+- **New sign-in dialog** — with a blue header band, a running braid and notices as a banner at the top. You type the authenticator app code into six boxes; after the sixth digit Herzog CAB checks it by itself. The fields no longer overlap during the two-factor prompt.
+- **My profile** — for customer account users, name and e-mail address come from the account and are read-only here; the button “Change in licence portal” takes you to the right place. Until now a change was gone again at the next start. The profile picture can still be changed in the program.
+- **Entries saved one by one, with a version** — materials, bobbins, drums, machines, orders, customers, colours, designs, print templates and floor plans are saved individually instead of as a whole list. If another computer has changed or deleted the same entry in the meantime, Herzog CAB asks: reload, overwrite or save as copy. Until now the program that saved last could silently overwrite other people's changes.
+- **Edit lock** — whoever edits an entry holds it locked. Other computers on the same working directory and, with cloud sync, Herzog CAB Web show a small lock and open the entry read-only; the tooltip says who is editing it. Once it is free again, one click loads the new version. With the permission “Release locks” a lock can be ended. This applies in the designer, orders and winding orders, the Factory Planner, the Print Editor and the master data.
+- **F1 opens the manual** — F1 opens the matching page of the online manual for the current page or dialog, in German for a German interface and in English otherwise. The guided tour now starts with Shift+F1; the new menu item *Help → Manual* opens the manual as well. On the Mac, Cmd+? opens the manual.
+- **Start page rearranged** — the start page uses the full window width in one to three columns: quick actions at the top, order counters, production with tabs and a table, favourites as tiles and “Recently opened” as a list in which each calculation shows its own icon. Buttons are now Herzog blue.
+- **Fits smaller screens** — below a window width of 1500 pixels the navigation collapses by itself; expanded with the mouse, it lies over the content instead of pushing it aside. Buttons are more compact, calculators scroll instead of being cut off, and explanatory sentences have moved into tooltips. The window can be made as small as 960 × 600 pixels.
+- **Plying colours in the designer** — with a ply count of 2 or more, every yarn of a carrier gets its own colour. Colour the yarns with the yarn selector in the toolbar or by right-clicking in the carrier table (“Plying colors…”). Carrier table, braid pattern, overview, 3D view and printout show the yarns individually; the winding order gets one line per yarn combination.
+- **Open designs with one click** — the cards under “Last edited” open a design with a single click. If the number of carriers of a design does not suit its braid type and binding, the designer suggests the nearest suitable number instead of silently staying on the start view.
+- **Braiding angle reference selectable** — under *Settings → General* you choose what the braiding angle is measured against: the cross direction, as usual at Herzog, or the braid axis, as in many textbooks. The choice applies to calculations, orders, the designer, the Braiding Simulator, the web server and printouts. It is stored per user, for customer account users also in Herzog CAB Web. Saved values do not change; the tooltip at the angle shows both directions.
+- **Braiding Simulator as an additional module** — the Braiding Simulator shows Herzog machines in motion: carriers, switches, time program and the resulting braid. It appears as soon as your administrator assigns you a model licence in the licence portal; model licences are available for accounts with a subscription. Its start page shows your machines, i.e. the machine models assigned to you. Work is done in four steps: Set up (place carriers and colour them), Program (set switches, record, timeline, change the slot pitch of horngears with several pitches while running), Check (collisions, repeat and whether every carrier returns to its place) and Output (print the switching plan for the control, or save it as PDF or CSV).
+- **Braiding Simulator: take-up, several braiding heads, machine in 3D** — for the take-up you specify exactly one value: take-up speed, lay length, braiding angle or PPI. The others follow from it, also section by section along the timeline. Machines with several braiding heads such as the RU 2/12-80 show carrier numbers and take-up per head. The 3D view “Machine” shows the loaded machine with the yarns running to the braiding point, the horngears and the braid up to beyond the take-up disc; the material diameter sets the braid preview.
+- **Translations and terms** — all six languages are fully translated. English technical terms now follow herzog-online.com and the manual, for example flat braid, horngear, take-up unit and pay-off unit. Messages from the licence server appear in the program language, and the Herzog catalogue appears in English in every language except German.
 
 ---
 
@@ -426,7 +461,7 @@ Multiple company workspaces can now be maintained in parallel.
 
 ---
 
-## Latest Version: 2.1.0
+## Latest Version: 2.1.1
 
 ---
 
