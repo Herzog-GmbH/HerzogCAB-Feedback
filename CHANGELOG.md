@@ -4,6 +4,104 @@ All notable changes to HerzogCAB will be documented in this file.
 
 ---
 
+## HerzogCAB 2.1.2 — 2026-10-26
+
+### Important
+
+- **Braiding Simulator without setups and programs from Herzog** — machine
+  models no longer come with configurations (full, half, tandem), setups or
+  programs from Herzog; you set up and program your machine yourself. Your own
+  setups and programs are kept, and so is a Herzog setup that one of your
+  programs is based on. “New setup” opens the empty machine in “Set up”. “Insert
+  operating mode…” has been removed as well.
+- **Print templates “Default Design” and “Default Design (high carrier count)”
+  are renewed** — at the first start Herzog CAB replaces these two templates
+  once with the new version with 3D view and colour legend, as long as they
+  still have their original name. If you have adapted one of them and want to
+  keep your changes, rename it in the Print Editor before updating.
+
+### New
+
+- **Programs belong to a setup** — in the Braiding Simulator you create any
+  number of programs on a setup; every program belongs to exactly one setup. The
+  start page shows one card per setup with carrier count, ply count, yarn Ø,
+  covering and core Ø, and below it its programs with steps, speed and take-up.
+  The ⋯ menu lets you rename, duplicate, assign to another setup or delete; “+
+  New program” creates a program right in the card. Programs without a setup are
+  listed in a group of their own and get their setup with “Assign…”.
+- **Braiding Simulator editor: setup first, then program** — the program
+  selection shows only the programs of the loaded setup; switching the setup
+  brings up its most recently used program. “Save as new setup…” can take the
+  open program along as a copy. Deleting a setup deletes its programs as well:
+  the confirmation lists them, and Undo brings everything back.
+- **Start position by click, take-up and speed along the whole timeline** —
+  without recording, a click on a gear (run or stop), a switch, a shift lever or
+  a switch group now changes the start position of the program, at any step; the
+  run is recalculated up to the current position. While recording it remains a
+  command from the current step on. Like the switches, take-up and speed now
+  span the whole width of the timeline: without “Repeat program” the last range
+  keeps applying, with repeat the ranges return with the program length.
+- **Twist per carrier in the designer** — with the “Twist” brush next to the
+  colour palette you give each carrier S or Z twist or untwisted yarns,
+  optionally with turns per metre (TPM). A click on a carrier in the carrier
+  table or the braid pattern sets the twist; as with colouring, this can be
+  limited to left or right run. The braid pattern draws the yarns with twist
+  strokes, the 3D view shows twisted yarn, and the printout states the twist.
+  Older versions do not know the twist and lose it when saving; please update
+  all computers on the same working directory.
+- **“Display” button in the designer** — one window next to the view buttons
+  gathers what used to be spread over texture, pattern, labels and the gear icon
+  of the 3D view: yarn structure, labels, material (yarn, wire, rope), simple
+  display, form and orientation. Whatever has no effect in the current view is
+  greyed out, and the tooltip says why. The 3D form now only offers “Default for
+  the braid type”, “Interlacing only (schematic)” and “As the machine is
+  arranged”. Twisted yarn used to be the default; designs without a twist set
+  now show smooth yarn.
+- **Design printout with 3D view and colour legend** — the standard templates
+  print the braid pattern and the 3D view side by side. The setup shows a colour
+  swatch per carrier with one stripe per yarn and the twist, and the colour
+  names appear once in a legend below. The design data are printed in plain
+  words, with material Ø, covering, braid Ø and 3D material; carrier labels are
+  no longer printed into the braid pattern. Print tables size their columns by
+  content and no longer cut off long values.
+- **Views in the designer** — you now rotate the cylinder and square views like
+  the 3D view by dragging sideways; the rotate buttons are gone, and a short
+  click still colours. For packing braids the “Edge” view is now called
+  “Square”. The machine overview has a ⏮ button that sets machine and braid
+  build-up back to the start.
+- **More accurate 3D preview, new material “Rope”** — flat braids and spiral
+  braids with a ply count show flat bands instead of a column or frayed yarns,
+  and in soutache braids the cores lie inside the braid instead of outside. The
+  new material “Rope” is for braids made of ropes, in the designer and in the
+  Braiding Simulator.
+- **Compare machines** — the “Compare” button in the Machine Fleet now compares
+  all kinds of machines: braiding and bobbin winding machines, take-up units,
+  pay-off units and creels, plus their dimensions. For braiding machines it
+  shows carriers per head, pitch and take-up; with a lay length entered it
+  calculates the output per head and in total at maximum speed (round braids).
+  If no speed is entered for the machine, the speed of the Herzog catalogue
+  model applies; the tooltip says where the value comes from.
+- **Core-cover product and braid density** — in the core-cover product Herzog
+  CAB completes the cover share to 100 % when you enter the core share, and vice
+  versa; tooltips explain filling grade and area shares. In the braid density
+  you choose under “Input via” the braiding angle or the lay length factor. Via
+  the factor, lay length = diameter (flat braid: width) × factor, and the
+  braiding angle appears as a result; via the angle, the lay length factor is
+  shown as an additional result.
+
+### Fixes
+
+- If the licence server answers with an error page during maintenance (HTTP 502,
+  503 or 504), Herzog CAB signs in offline as it does without a network, instead
+  of aborting the sign-in.
+- Signing out and quitting now clean up the 3D view “Machine” properly.
+- With two designs open, the overview no longer appears twice in the left column
+  after changing the braid type.
+- The bobbin winding machine icon shows four winding positions and matches the
+  other icons.
+
+---
+
 ## HerzogCAB 2.1.1 — 2026-10-17
 
 ### Important
